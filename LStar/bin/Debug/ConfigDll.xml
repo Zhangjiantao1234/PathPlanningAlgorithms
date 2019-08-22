@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConfigDll</name>
+    </assembly>
+    <members>
+        <member name="T:ConfigDll.IniOperation">
+            <summary>
+            配置文件操作类
+            </summary>
+        </member>
+        <member name="M:ConfigDll.IniOperation.WriteProfileString(System.String,System.String,System.String,System.String)">
+            <summary>
+            写配置信息, 如果文件不存在则新建一个
+            </summary>
+            <param name="section">节</param>
+            <param name="key">键</param>
+            <param name="val">值</param>
+            <param name="filePath">指定的ini文件路径，如果没有路径，则在windows目录下查找. </param>
+        </member>
+        <member name="M:ConfigDll.IniOperation.GetProfileString(System.String,System.String,System.String,System.String)">
+            <summary>
+            读配置信息
+            </summary>
+            <param name="section">节</param>
+            <param name="key">键</param>
+            <param name="def">当指定信息，未找到时，则返回def，可以为空。</param>
+            <param name="filePath">指定的ini文件路径，如果没有路径，则在windows目录下查找. </param>
+        </member>
+        <member name="T:ConfigDll.IDOperation">
+            <summary>
+            唯一标志符操作类
+            </summary>
+        </member>
+        <member name="M:ConfigDll.IDOperation.GenerateLongStringID">
+            <summary>
+            生成长字符串形式的全局唯一标识符(GUID) - 如:0f8fad5b-d9cb-469f-a165-70867728950e
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ConfigDll.IDOperation.GenerateShortStringID">
+            <summary>
+            生成短字符串形式的全局唯一标识符(GUID) - 如:
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ConfigDll.IDOperation.GenerateLongIntID">
+            <summary>
+            生成数字(长整型)形式的全局唯一标识符(GUID) - 如:
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ConfigDll.StringZip">
+            <summary>
+            压缩解压字符串
+            </summary>
+        </member>
+        <member name="M:ConfigDll.StringZip.Zip(System.String)">
+            <summary>
+            压缩字符串
+            </summary>
+            <param name="value">待压缩的字符串</param>
+            <returns>压缩后的字符串</returns>
+        </member>
+        <member name="M:ConfigDll.StringZip.UnZip(System.String)">
+            <summary>
+            解压缩字符串
+            </summary>
+            <param name="value">带解压的字符串</param>
+            <returns>解压后的字符串</returns>
+        </member>
+        <member name="T:ConfigDll.RegOperation">
+            <summary>
+            注册表操作类
+            </summary>
+        </member>
+        <member name="M:ConfigDll.RegOperation.GetRegistryKey(ConfigDll.RegOperation.RegistryKeyEnum)">
+            <summary>
+            获取注册表主键
+            </summary>
+            <param name="eRegistryKeyEnum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConfigDll.RegOperation.RegeditKeyIsExist(Microsoft.Win32.RegistryKey,System.String,System.String)">
+            <summary>
+            判断指定注册表项是否存在
+            </summary>
+            <param name="mRegistryKey">要在其中搜索的主键</param>
+            <param name="sSubKey">要在其中搜索的子键,格式如:"SOFTWARE\\SUBKEY\\SUBKEY"</param>
+            <param name="sRegName">要搜索的项名称</param>
+        </member>
+        <member name="M:ConfigDll.RegOperation.RegeditSubKeyIsExist(Microsoft.Win32.RegistryKey,System.String)">
+            <summary>
+            判断指定注册表子目录项是否存在
+            </summary>
+            <param name="mRegistryKey">要在其中搜索的主键</param>
+            <param name="sSubKey">要在其中搜索的子键,格式如:"SOFTWARE\\SUBKEY\\SUBKEY"</param>
+        </member>
+        <member name="M:ConfigDll.RegOperation.AddRegeditKey(Microsoft.Win32.RegistryKey,System.String,System.String,System.String)">
+            <summary>
+            创建新注册表项
+            </summary>
+            <param name="mRegistryKey">主键</param>
+            <param name="sSubKey">要创建的子键,格式如:"SOFTWARE\\SUBKEY\\SUBKEY"</param>
+            <param name="sRegName">项名称</param>
+            <param name="sRegValue">项值</param>
+        </member>
+        <member name="M:ConfigDll.RegOperation.ModifyRegeditKey(Microsoft.Win32.RegistryKey,System.String,System.String,System.String)">
+            <summary>
+            修改注册表项
+            </summary>
+            <param name="mRegistryKey">主键</param>
+            <param name="sSubKey">要修改的子键,格式如:"SOFTWARE\\SUBKEY\\SUBKEY"</param>
+            <param name="sRegName">项名称</param>
+            <param name="sRegValue">项值</param>
+        </member>
+        <member name="M:ConfigDll.RegOperation.DeleteRegeditKey(Microsoft.Win32.RegistryKey,System.String,System.String,System.String)">
+            <summary>
+            删除注册表项
+            </summary>
+            <param name="mRegistryKey">主键</param>
+            <param name="sSubKey">要删除的子键,格式如:"SOFTWARE\\SUBKEY\\SUBKEY"</param>
+            <param name="sRegName">项名称</param>
+            <param name="sRegValue">项值</param>
+        </member>
+        <member name="T:ConfigDll.RegOperation.RegistryKeyEnum">
+            <summary>
+            注册表键枚举值
+            </summary>
+        </member>
+        <member name="F:ConfigDll.RegOperation.RegistryKeyEnum.ClassesRoot">
+            <summary>
+            ClassesRoot
+            </summary>
+        </member>
+        <member name="F:ConfigDll.RegOperation.RegistryKeyEnum.CurrentUser">
+            <summary>
+            CurrentUser
+            </summary>
+        </member>
+        <member name="F:ConfigDll.RegOperation.RegistryKeyEnum.LocalMachine">
+            <summary>
+            LocalMachine
+            </summary>
+        </member>
+        <member name="F:ConfigDll.RegOperation.RegistryKeyEnum.Users">
+            <summary>
+            Users
+            </summary>
+        </member>
+        <member name="F:ConfigDll.RegOperation.RegistryKeyEnum.CurrentConfig">
+            <summary>
+            CurrentConfig
+            </summary>
+        </member>
+        <member name="F:ConfigDll.RegOperation.RegistryKeyEnum.DynData">
+            <summary>
+            DynData
+            </summary>
+        </member>
+        <member name="F:ConfigDll.RegOperation.RegistryKeyEnum.PerformanceData">
+            <summary>
+            PerformanceData
+            </summary>
+        </member>
+        <member name="T:ConfigDll.AppConfigOperation">
+            <summary>
+            应用程序配置操作类
+            </summary>
+        </member>
+        <member name="M:ConfigDll.AppConfigOperation.AddConfigurationItem(System.String,System.String)">
+            <summary>
+            增加配置项
+            </summary>
+            <param name="key">键</param>
+            <param name="value">键值</param>
+            <returns>是否增加成功</returns>
+        </member>
+        <member name="M:ConfigDll.AppConfigOperation.UpdateConfigurationItemValue(System.String,System.String)">
+            <summary>
+            修改配置项
+            </summary>
+            <param name="key">键</param>
+            <param name="newValue">更新的键值</param>
+            <returns>是否更新成功</returns>
+        </member>
+        <member name="M:ConfigDll.AppConfigOperation.DeleteConfigurationItem(System.String)">
+            <summary>
+            删除配置项
+            </summary>
+            <param name="key">键</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:ConfigDll.AppConfigOperation.GetConfigurationValue(System.String)">
+            <summary>
+            取得配置文件appSettings里的值
+            </summary>
+            <param name="key">键</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:ConfigDll.AppConfigOperation.GetConfigurationItemList">
+            <summary>
+            取得配置文件appSettings里所有的键(用数组表示)
+            </summary>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="T:ConfigDll.TxtOperation">
+            <summary>
+            文本文件操作类
+            </summary>
+        </member>
+        <member name="M:ConfigDll.TxtOperation.ReadTxtFileToString(System.String)">
+            <summary>
+            读取文本文件到字符串
+            </summary>
+            <param name="sFullFilename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConfigDll.TxtOperation.WriteStringToTxtFile(System.String,System.String)">
+            <summary>
+            写入字符串到文本文件
+            </summary>
+            <param name="sFullFilename">完整文件名</param>
+            <param name="sInfo">写入的信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:ConfigDll.TxtOperation.ReadTxtFileToStringSet(System.String)">
+            <summary>
+            读取文本文件每一行到字符串数组
+            </summary>
+            <param name="sFullFilename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConfigDll.TxtOperation.ReadSqlFileToSQLStringSet(System.String)">
+            <summary>
+            读取SQL文件每一行到字符串数组
+            </summary>
+            <param name="sFullFilename"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

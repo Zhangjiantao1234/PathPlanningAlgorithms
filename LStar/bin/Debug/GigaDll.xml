@@ -1,0 +1,1054 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GigaDll</name>
+    </assembly>
+    <members>
+        <member name="T:GigaDll.Giga3DGraph">
+            <summary>
+            3维图像
+            </summary>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.Create3DBasic(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Int32,System.String,System.String,System.String[],System.Double[])">
+            <summary>
+            创建3D基本坐标图
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="nSubsets">子图数量</param>
+            <param name="nPoints">点数量</param>
+            <param name="sMainTitle">主标题</param>
+            <param name="sSubTitle">副标题</param>
+            <param name="sAxisLabels">X/Y/Z坐标轴标签</param>
+            <param name="fAxisRange">X/Y/Z坐标轴范围,当最小值大于等于最大值时,坐标轴范围为自动</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.SetRenderEngine(Gigasoft.ProEssentials.Pe3do,System.Int32)">
+            <summary>
+            设置绘图引擎
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="nCode">Gdi = 0, Hybrid = 1, GdiPlus = 2, GdiTurbo = 3</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.Modify3DGraphProperties_SubSet(Gigasoft.ProEssentials.Pe3do,System.Int32,System.String[])">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iSubsetNumber">子图数量</param>
+            <param name="sSubsetTitle">子图名称</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.ModifyGraphProperties_SubSet(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Drawing.Color,Gigasoft.ProEssentials.Enums.PointType,Gigasoft.ProEssentials.Enums.LineType)">
+            <summary>
+            临时修改图像属性 - 将指定的子图风格设置为路径风格
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iSubsetIndex">子图索引数组</param>
+            <param name="mColor">颜色数组</param>
+            <param name="mPointType">点类型数组</param>
+            <param name="mLineType">线类型数组</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.Modify3DGraphProperties_SubSet(Gigasoft.ProEssentials.Pe3do,System.Int32[],System.Drawing.Color[],Gigasoft.ProEssentials.Enums.PointType[],Gigasoft.ProEssentials.Enums.LineType[])">
+            <summary>
+            临时修改图像属性 - 将指定的子图风格设置为路径风格
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iSubsetIndies">子图索引数组</param>
+            <param name="mColors">颜色数组</param>
+            <param name="mPointTypes">点类型数组</param>
+            <param name="mLineTypes">线类型数组</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.Modify3DGraphProperties_Point(Gigasoft.ProEssentials.Pe3do,System.Int32)">
+            <summary>
+            临时修改图像属性 - 设置子图上点的数量
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iPointNumber">点数量</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.Modify3DGraphProperties_Point(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Int32[])">
+            <summary>
+            临时修改图像属性 - 设置指定子图上点的数量
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iPointNumber">点数量</param>
+            <param name="iSubsetIndies">子图索引数组</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.Modify3DGraphProperties_Point(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Int32,System.Int32[])">
+            <summary>
+            临时修改图像属性 - 设置指定子图上点的数量, 并清除非指定子涂上多余的点
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iPointNumber1">点数量1</param>
+            <param name="iPointNumber2">点数量2</param>
+            <param name="iSubsetIndies">子图索引数组</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.ModifySimpleGraphProperties_Legend(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Int32)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iStartLegendIndex">要显示的开始图例索引</param>
+            <param name="iEndLegendIndex">要显示的结束图例索引</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.Modify3DGraphProperties_MainTitle(Gigasoft.ProEssentials.Pe3do,System.String)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="sMainTitle">标题</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.Modify3DGraphProperties_SubTitle(Gigasoft.ProEssentials.Pe3do,System.String)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="sSubTitle">副标题</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.GetSimpleGraphAxisRange(Gigasoft.ProEssentials.Pe3do)">
+            <summary>
+            获取坐标范围
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <returns>坐标范围：MinX,MaxX,MinY,MaxY,MinZ,MaxZ</returns>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.Modify3DGraphBasic(Gigasoft.ProEssentials.Pe3do)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pe3do1"></param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.CreateSingle3DPointDynamic(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Int32,System.Single,System.Single,System.Single)">
+            <summary>
+            绘制一个3D点,点的总数量不确定,需要动态增加
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iPointIndex">点索引</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+            <param name="fZ">Z坐标</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.CreateSingle3DPointStatic(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Int32,System.Single,System.Single,System.Single)">
+            <summary>
+            绘制一个3D点,点的总数量确定,不需要动态增加
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iPointIndex">点索引</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+            <param name="fZ">Z坐标</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.CreateMulti3DPoints(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Int32,System.Int32,System.Single[],System.Single[],System.Single[])">
+            <summary>
+            绘制多个3D点
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iStartPointIndex">开始点索引</param>
+            <param name="nPointNumber">点数量</param>
+            <param name="fXArray">X坐标数组</param>
+            <param name="fYArray">Y坐标数组</param>
+            <param name="fZArray">Z坐标数组</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.ModifyPointSymbol(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Single,System.Single,System.Single,System.String,System.Drawing.Color)">
+            <summary>
+            绘制一个点标记符号  已知标记符号索引
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+            <param name="fZ">Z坐标</param>
+            <param name="sText">文字</param>
+            <param name="nColor">颜色</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.CreatePointSymbol(Gigasoft.ProEssentials.Pe3do,System.Single,System.Single,System.Single,System.String,System.Drawing.Color)">
+            <summary>
+            绘制一个点标记符号  未知标记符号索引，需要添加标记符号
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+            <param name="fZ">Z坐标</param>
+            <param name="sText">文字</param>
+            <param name="nColor">颜色</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.CreateSingleSystemSymbol(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.String,System.Drawing.Color)">
+            <summary>
+            绘制一个系统符号
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引</param>
+            <param name="iSymbolValue">标记符号取值</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+            <param name="fZ">Z坐标</param>
+            <param name="sText">文字</param>
+            <param name="nColor">颜色</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.CreateWireFrame(Gigasoft.ProEssentials.Pe3do,System.Collections.Generic.List{System.Collections.Generic.List{System.Double[][]}},System.Drawing.Color)">
+            <summary>
+            绘制3D等高线
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="fContourLine">等高线数据</param>
+            <param name="mColor">绘图颜色</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.CreateSurface(Gigasoft.ProEssentials.Pe3do,System.Double[0:,0:],System.Double[0:,0:],System.Double[0:,0:],System.Drawing.Color)">
+            <summary>
+            绘制一个特定形体表面
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="pElevDataX">表面X坐标矩阵</param>
+            <param name="pElevDataY">表面Y坐标矩阵</param>
+            <param name="pElevDataZ">表面Z坐标矩阵</param>
+            <param name="mcolor">绘图颜色</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.SetSimpleGraphAxisRange(Gigasoft.ProEssentials.Pe3do,System.Double[])">
+            <summary>
+            设置坐标范围
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="range"></param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.CreateWireFrame2(Gigasoft.ProEssentials.Pe3do,System.Double[0:,0:],System.Double[])">
+            <summary>
+            绘制等高线
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="pElevData">等高线数据</param>
+            <param name="fAxiRange">场景大小</param>
+            <param name="fAxisRange">坐标范围</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.ClearPoints(Gigasoft.ProEssentials.Pe3do,System.Int32,System.Int32)">
+            <summary>
+            清除指定子图中的指定点
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+            <param name="iStartSubSet">开始子图索引</param>
+            <param name="iEndSubSet">结束子图索引</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.ShowPe3do(Gigasoft.ProEssentials.Pe3do)">
+            <summary>
+            显示图像
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+        </member>
+        <member name="M:GigaDll.Giga3DGraph.ShowPe3doForRefresh(Gigasoft.ProEssentials.Pe3do)">
+            <summary>
+            显示图像
+            </summary>
+            <param name="Pe3do1">绘图对象</param>
+        </member>
+        <member name="T:GigaDll.Properties.Resources">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.Culture">
+            <summary>
+              为使用此强类型资源类的所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripButton_Graph_Refresh">
+            <summary>
+              查找类似 刷新 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripButton_Graph_ZoomFit">
+            <summary>
+              查找类似 还原 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripButton_Graph_ZoomIn">
+            <summary>
+              查找类似 放大 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripButton_Graph_ZoomOut">
+            <summary>
+              查找类似 缩小 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripComboBox_GraphScale_0_Equal">
+            <summary>
+              查找类似 等宽高比 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripComboBox_GraphScale_1_Window">
+            <summary>
+              查找类似 适应窗口 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripComboBox_GraphScale_ToolTip">
+            <summary>
+              查找类似 图像显示风格 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripComboBox_Height_0">
+            <summary>
+              查找类似 0 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripComboBox_Height_12">
+            <summary>
+              查找类似 12 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripComboBox_Height_15">
+            <summary>
+              查找类似 15 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripComboBox_Height_4">
+            <summary>
+              查找类似 4 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripComboBox_Height_8">
+            <summary>
+              查找类似 8 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:GigaDll.Properties.Resources.ToolStripComboBox_Height_ToolTip">
+            <summary>
+              查找类似 场景横截面高度 的本地化字符串。
+            </summary>
+        </member>
+        <member name="T:GigaDll.GigaScientificGraph">
+            <summary>
+            曲线图像
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraph.lockThis">
+            <summary>
+            静态对象 - 在本类中用于指示函数范围
+            </summary>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSGraphBasic(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32,System.String,System.String,System.String[],System.Double[])">
+            <summary>
+            创建Scientific Graph 基本坐标图
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="nSubsets">子图数量 - 大于0时为设置的子图数量 小于等于0时子图数量为1</param>
+            <param name="nPoints">点数量 - 大于0时为设置的点数量 小于等于0时不设置点数量</param>
+            <param name="sMainTitle">主标题</param>
+            <param name="sSubTitle">副标题</param>
+            <param name="sAxisLabels">X/Y坐标轴标签 - 数组维数为2</param>
+            <param name="fAxisRange">X/Y坐标轴范围,当最小值大于等于最大值时,坐标轴范围为自动,数组维数为2</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.SetRenderEngine(Gigasoft.ProEssentials.Pesgo,System.Int32)">
+            <summary>
+            设置绘图引擎(Gdi = 0, Hybrid = 1, GdiPlus = 2, GdiTurbo = 3)
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="nCode">Gdi = 0, Hybrid = 1, GdiPlus = 2, GdiTurbo = 3</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.GetSimpleGraphAxisRange(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            获取坐标范围
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <returns>坐标范围：MinX,MaxX,MinY,MaxY</returns>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySimpleGraphProperties_SubSet(Gigasoft.ProEssentials.Pesgo,System.Int32,System.String[])">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSubsetNumber">子图数量</param>
+            <param name="sSubsetTitle">子图名称</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifyGraphProperties_SubSet(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Drawing.Color,Gigasoft.ProEssentials.Enums.PointType,Gigasoft.ProEssentials.Enums.LineType)">
+            <summary>
+            临时修改图像属性 - 将指定的子图风格设置为路径风格
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSubsetIndex">子图索引数组</param>
+            <param name="mColor">颜色数组</param>
+            <param name="mPointType">点类型数组</param>
+            <param name="mLineType">线类型数组</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifyGraphProperties_SubSet(Gigasoft.ProEssentials.Pesgo,System.Int32[],System.Drawing.Color[],Gigasoft.ProEssentials.Enums.PointType[],Gigasoft.ProEssentials.Enums.LineType[])">
+            <summary>
+            临时修改图像属性 - 将指定的子图风格设置为路径风格
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSubsetIndies">子图索引数组</param>
+            <param name="mColors">颜色数组</param>
+            <param name="mPointTypes">点类型数组</param>
+            <param name="mLineTypes">线类型数组</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySimpleGraphProperties_Point(Gigasoft.ProEssentials.Pesgo,System.Int32)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iPointNumber">点数量</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySimpleGraphProperties_Point(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iPointNumber">点数量</param>
+            <param name="iStartSubSet">开始子图索引</param>
+            <param name="iEndSubSet">结束子图索引</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySimpleGraphProperties_Legend(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iStartLegendIndex">要显示的开始图例索引</param>
+            <param name="iEndLegendIndex">要显示的结束图例索引</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySimpleGraphProperties_MainTitle(Gigasoft.ProEssentials.Pesgo,System.String)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="sMainTitle">标题</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySimpleGraphProperties_SubTitle(Gigasoft.ProEssentials.Pesgo,System.String)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="sSubTitle">副标题</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySGraphProperties_Scale(Gigasoft.ProEssentials.Pesgo,System.Int32)">
+            <summary>
+            临时修改图像属性
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iScale">绘图规模比例 - 0:等宽高比例; 1:适应窗口大小</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySGraphProperties_ContextMenu(Gigasoft.ProEssentials.Pesgo,System.Boolean)">
+            <summary>
+            临时修改图像属性
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="bShow">是否显示右键菜单</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySGraphProperties_CustomDialog(Gigasoft.ProEssentials.Pesgo,System.Boolean)">
+            <summary>
+            临时修改图像属性
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="bShow">是否显示右键菜单</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySGraphProperties_CursorMode(Gigasoft.ProEssentials.Pesgo,System.Int32)">
+            <summary>
+            临时修改图像属性
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iCursorMode">光标风格: NoCursor = 0,Point = 1,DataCross = 2,DataSquare = 3,FloatingY = 4,FloatingXY = 5,FloatingXOnly = 6,FloatingYOnly = 7</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSingle2DPointStatic(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32,System.Single,System.Single)">
+            <summary>
+            绘制一个点,点的总数量确定,不需要动态增加
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iPointIndex">点索引</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSingle2DPointStatic(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32,System.Single,System.Single,System.Drawing.Color)">
+            <summary>
+            绘制一个点,点的总数量确定,不需要动态增加
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iPointIndex">点索引</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+            <param name="nColor">颜色</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.Create2DPointsStatic(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32,System.Single[],System.Single[])">
+            <summary>
+            绘制若干个点,点的总数量确定,不需要动态增加
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iCount">点索引</param>
+            <param name="fXs">X坐标</param>
+            <param name="fYs">Y坐标</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSingle2DPointDynamic(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32,System.Single,System.Single)">
+            <summary>
+            绘制一个点,点的总数量不确定,需要动态增加
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iPointIndex">点索引</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySinglePointSymbol(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Single,System.Single,System.String,System.Drawing.Color,System.Byte)">
+            <summary>
+            绘制一个点标记符号  已知标记符号索引
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+            <param name="sText">文字</param>
+            <param name="nColor">颜色</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSinglePointSymbol(Gigasoft.ProEssentials.Pesgo,System.Single,System.Single,System.String,System.Drawing.Color,System.Byte)">
+            <summary>
+            绘制一个点标记符号  未知标记符号索引，需要添加标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+            <param name="sText">文字</param>
+            <param name="nColor">颜色</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSingleHorizontalLineSymbol(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Single,System.String,System.Drawing.Color,System.Byte)">
+            <summary>
+            绘制一个Horizontal线型标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引</param>
+            <param name="fY">纵坐标位置</param>
+            <param name="sText">标记符号文字</param>
+            <param name="nColor">标记符号颜色</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSingleVerticalLineSymbol(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Single,System.String,System.Drawing.Color,System.Byte)">
+            <summary>
+            绘制一个Vertical线型标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引</param>
+            <param name="fX">横坐标</param>
+            <param name="sText">标记符号文字</param>
+            <param name="nColor">标记符号颜色</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateLineSymbols(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Single[],System.Single[],System.String[],System.Drawing.Color,System.Byte,System.Int32)">
+            <summary>
+            绘制一个任意线型标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引</param>
+            <param name="fXs">开始点横坐标</param>
+            <param name="fYs">开始点纵坐标</param>
+            <param name="sTexts">标记符号文字</param>
+            <param name="nColor">标记符号颜色</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+            <param name="mLineStyle">标记线形风格：</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateLineSymbols(Gigasoft.ProEssentials.Pesgo,System.Single[],System.Single[],System.String[],System.Drawing.Color,System.Byte,System.Int32)">
+            <summary>
+            绘制一个任意线型标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="fXs">开始点横坐标</param>
+            <param name="fYs">开始点纵坐标</param>
+            <param name="sTexts">标记符号文字</param>
+            <param name="nColor">标记符号颜色</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+            <param name="mLineStyle">标记线形风格：</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateLineArrow(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Single[],System.Single[],System.String[],System.Drawing.Color,System.Int32,System.Byte)">
+            <summary>
+            绘制一个任意线型标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引</param>
+            <param name="fXs">开始点横坐标</param>
+            <param name="fYs">开始点纵坐标</param>
+            <param name="sTexts">标记符号文字</param>
+            <param name="nColor">标记符号颜色</param>
+            <param name="mLineStyle">标记线形风格</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSingleCircleSymbol(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Single,System.Single,System.Single,System.Single,System.String,System.Drawing.Color,System.Int32,System.Byte)">
+            <summary>
+            绘制一个Circle形状
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引,一次需要3个索引</param>
+            <param name="fCenterX">圆心横坐标位置</param>
+            <param name="fCenterY">圆心纵坐标位置</param>
+            <param name="fRadiusX">横半径长度</param>
+            <param name="fRadiusY">纵半径长度</param>
+            <param name="sText">标记符号文字</param>
+            <param name="nColor">标记符号颜色</param>
+            <param name="iFillStyle">填充风格: 
+            EllipseThin = 64, EllipseDash = 65, EllipseDot = 66, EllipseDashDot = 67, EllipseDashDotDot = 68,
+            EllipseMedium = 69, EllipseThick = 70, EllipseFill = 71,
+            EllipseHatchHorizontal = 169, EllipseHatchVertical = 170, EllipseHatchFdiagonal = 171,
+            EllipseHatchBdiagonal = 172, EllipseHatchCross = 173, EllipseHatchDiagCross = 174,
+            EllipseMediumDash = 141, EllipseMediumDot = 142, EllipseMediumDashDot = 143,
+            EllipseMediumDashDotDot = 144, EllipseThickDash = 145, EllipseThickDot = 146,
+            EllipseThickDashDot = 147, EllipseThickDashDotDot = 148</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSinglePolygonSymbol(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Single[],System.Single[],System.String[],System.Drawing.Color,System.Int32,System.Byte)">
+            <summary>
+            绘制一个多边形形状 - polygon  - 顺时针方向
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引,一次需要n个索引</param>
+            <param name="fPointsX">横坐标位置组</param>
+            <param name="fPointsY">纵坐标位置组</param>
+            <param name="sTexts">标记符号文字</param>
+            <param name="nColor">标记符号颜色</param>
+            <param name="iFillStyle">填充风格: 
+             EndPolygon=76,EndPolyLineThi =77,EndPolyLineMedium=78, EndPolylineThick=79, EndPolylineDash=80,
+             EndPolylineDot=81, EndPolylineDashDot=82,EndPolylineDashDotDot=83,
+             EndPolyLineMediumDash = 149, EndPolyLineMediumDot = 150, EndPolyLineMediumDashDot = 151,
+             EndPolyLineMediumDashDotDot = 152, EndPolyLineThickDash = 153, EndPolyLineThickDot = 154,
+             EndPolyLineThickDashDot = 155, EndPolyLineThickDashDotDot = 156,
+             EndPolygonHatchHorizontal = 175,EndPolygonHatchVertical = 176, EndPolygonHatchFdiagonal = 177,
+             EndPolygonHatchBdiagonal = 178,EndPolygonHatchCross = 179,EndPolygonHatchDiagCross = 180</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSingleSystemSymbol(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32,System.Single,System.Single,System.String,System.Drawing.Color,System.Byte)">
+            <summary>
+            绘制一个系统符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引</param>
+            <param name="iSymbolValue">标记符号取值</param>
+            <param name="fX">横坐标位置</param>
+            <param name="fY">纵坐标位置</param>
+            <param name="sText">标记符号文字</param>
+            <param name="nColor">标记符号颜色</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateSystemSymbols(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32,System.Int32[],System.Single[],System.Single[],System.String[],System.Drawing.Color[],System.Byte)">
+            <summary>
+            绘制一组系统符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iSymbolIndex">标记符号索引开始值</param>
+            <param name="iCount">数量</param>
+            <param name="iSymbolValues">标记符号取值</param>
+            <param name="fXs">横坐标位置</param>
+            <param name="fYs">纵坐标位置</param>
+            <param name="sText">标记符号文字</param>
+            <param name="nColors">标记符号颜色</param>
+            <param name="iFront">是否在上面 - 0:在下面; 1:在上面</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateTable(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32,System.String[0:,0:])">
+            <summary>
+            创建图上显示的表
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="rowCount">表行数</param>
+            <param name="columnCount">表列数</param>
+            <param name="sTexts">表内容文字</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.Create2DContourLine(Gigasoft.ProEssentials.Pesgo,System.Double[0:,0:],System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            绘制等高线
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="pElevData">等高线数据</param>
+            <param name="fStepX">X</param>
+            <param name="fStepY">Y</param>
+            <param name="fLowerValue">等值线显示的最小值</param>
+            <param name="fFreq">等值线显示频率</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.Create2DContourLine(Gigasoft.ProEssentials.Pesgo,System.Collections.Generic.List{System.Collections.Generic.List{System.Double[][]}},System.Drawing.Color)">
+            <summary>
+            绘制等高线
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="fContourLine">等高线数据</param>
+            <param name="mColor">颜色</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.PedalPointLine(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            求点到直线的垂足,点(X0, Y0),线AX+BY+C=0;
+            </summary>
+            <param name="X0">点的X坐标</param>
+            <param name="Y0">点的Y坐标</param>
+            <param name="A">直线的A</param>
+            <param name="B">直线的B</param>
+            <param name="C">直线的C</param>
+            <returns>垂足坐标</returns>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateArrowPoints(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            画箭头，起点(X1, Y1)，终点(X2, Y2)
+            </summary>
+            <param name="X1">起点X坐标</param>
+            <param name="Y1">起点Y坐标</param>
+            <param name="X2">终点X坐标</param>
+            <param name="Y2">终点Y坐标</param>
+            <returns>箭头7个点的坐标</returns>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.CreateArrowPoints(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            画箭头，起点(X1, Y1)，终点(X2, Y2)
+            </summary>
+            <param name="X1">起点X坐标</param>
+            <param name="Y1">起点Y坐标</param>
+            <param name="X2">终点X坐标</param>
+            <param name="Y2">终点Y坐标</param>
+            <param name="fWidth1">箭身宽度</param>
+            <param name="fWidth2">箭头宽度</param>
+            <param name="fHeadLength">箭头长度</param>
+            <returns>箭头7个点的坐标</returns>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ClearAllGraphSymbols(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            清空所有图标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ClearAllGraphSymbols(Gigasoft.ProEssentials.Pesgo,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            清空所有图标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iRange">符号索引</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ClearGraphSymbol(Gigasoft.ProEssentials.Pesgo,System.Int32)">
+            <summary>
+            清空指定图标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iIndex">符号索引</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ClearAllLineSymbols(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            清空所有线标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ClearAllLineSymbols(Gigasoft.ProEssentials.Pesgo,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            清空所有线标记符号
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iRange">符号索引</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.SetSGraphAxisRange(Gigasoft.ProEssentials.Pesgo,System.Double[])">
+            <summary>
+            手动设定坐标范围
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="fAxisRange">坐标数组</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.SetDeskBackgroundPicture(Gigasoft.ProEssentials.Pesgo,System.String)">
+            <summary>
+            设置桌面图像模式
+            </summary>
+            <param name="Pesgo1"></param>
+            <param name="pictureFile"></param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.SetGraphBackgroundPicture(Gigasoft.ProEssentials.Pesgo,System.String)">
+            <summary>
+            设置画布背景图像
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="pictureFile">背景图片完整地址</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.GetDataFromCurrentMouseLocation(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            根据当前鼠标点位置获取该位置的坐标
+            </summary>
+            <param name="Pesgo1"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.GetDataFromSpecifiedMouseLocation(Gigasoft.ProEssentials.Pesgo,System.Drawing.Point)">
+            <summary>
+            根据指定鼠标点位置获取该位置的坐标
+            </summary>
+            <param name="Pesgo1"></param>
+            <param name="pt">指定坐标</param>
+            <returns></returns>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.MovePointForward(Gigasoft.ProEssentials.Pesgo,System.Int32@,System.Int32)">
+            <summary>
+            移除最前的nNumber个点，并将绘图索引减少nNumber
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="nCurPointIndex">当前绘图点索引</param>
+            <param name="nNumber">要移除的点数量</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ClearPoints(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32)">
+            <summary>
+            清除指定子图中的指定点
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="iStartSubSet">开始子图索引</param>
+            <param name="iEndSubSet">结束子图索引</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ClearAllPoints(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            清除所有点
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySGraphProperties_PaintPoint(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            临时修改图像属性 - 修改为绘制点模式
+            </summary>
+            <param name="Pesgo1"></param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySGraphProperties_ExportStyle(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            修改图像导出属性
+            </summary>
+            <param name="Pesgo1"></param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySGraphProperties_MatlabStyle(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            修改图像为Matlab风格
+            </summary>
+            <param name="Pesgo1"></param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ModifySGraphProperties_ThrowMatlabStyle(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            去掉图像的Matlab风格
+            </summary>
+            <param name="Pesgo1"></param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ShowPesgo(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            显示图像
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ShowPesgoForRefresh(Gigasoft.ProEssentials.Pesgo)">
+            <summary>
+            显示图像
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraph.ShowPesgoPartial(Gigasoft.ProEssentials.Pesgo,System.Int32,System.Int32)">
+            <summary>
+            部分刷新图像
+            </summary>
+            <param name="Pesgo1">绘图对象</param>
+            <param name="startIndex"></param>
+            <param name="pointsToDraw"></param>
+        </member>
+        <member name="T:GigaDll.GigaScientificGraphToolStrip">
+            <summary>
+            科学曲线绘制类
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraphToolStrip.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraphToolStrip.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.gigaPesgo">
+            <summary>
+            绘图对象
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.showRefresh">
+            <summary>
+            显示刷新按钮
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.showZoomIn">
+            <summary>
+            显示放大变焦按钮
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.showZoomOut">
+            <summary>
+            显示缩小变焦按钮
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.showGraphScale">
+            <summary>
+            显示图像显示模式(0:等宽高比例; 1:适应窗口大小)
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.selectGraphScaleIndex">
+            <summary>
+            图像显示模式
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.showHeight">
+            <summary>
+            显示横截面高度
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.height">
+            <summary>
+            横截面高度
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.showPaintColor">
+            <summary>
+            是否显示彩色设置
+            </summary>
+        </member>
+        <member name="F:GigaDll.GigaScientificGraphToolStrip.isColor">
+            <summary>
+            是否彩色显示
+            </summary>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraphToolStrip.#ctor">
+            <summary>
+            科学曲线工具条构造函数
+            </summary>
+        </member>
+        <member name="M:GigaDll.GigaScientificGraphToolStrip.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            科学曲线工具条构造函数
+            </summary>
+            <param name="container">容器接口</param>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.GigaPesgo">
+            <summary>
+            获取或设置绘图对象
+            </summary>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.ShowRefresh">
+            <summary>
+            获取或设置刷新按钮
+            </summary>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.ShowZoomIn">
+            <summary>
+            获取或设置放大显示变焦按钮
+            </summary>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.ShowZoomOut">
+            <summary>
+            获取或设置缩小显示变焦按钮
+            </summary>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.ShowGraphScale">
+            <summary>
+            获取或设置显示图像显示模式(0:等宽高比例; 1:适应窗口大小)
+            </summary>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.SelectGraphScaleIndex">
+            <summary>
+            获取或设置图像显示模式
+            </summary>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.ShowHeight">
+            <summary>
+            获取或设置显示横截面高度
+            </summary>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.Height">
+            <summary>
+            获取或设置横截面高度
+            </summary>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.ShowPaintColor">
+            <summary>
+            获取或设置是否显示彩色设置
+            </summary>
+        </member>
+        <member name="P:GigaDll.GigaScientificGraphToolStrip.IsColor">
+            <summary>
+            获取或设置是否彩色显示
+            </summary>
+        </member>
+        <member name="T:GigaDll.GigaSimpleGraph">
+            <summary>
+            简单平面图像
+            </summary>
+        </member>
+        <member name="M:GigaDll.GigaSimpleGraph.CreateSimpleGraphBasic(Gigasoft.ProEssentials.Pego,System.Int32,System.Int32,System.String,System.String,System.String[],System.Double[])">
+            <summary>
+            创建Simple Graph 基本坐标图
+            </summary>
+            <param name="Pego1">绘图对象</param>
+            <param name="nSubsets">子图数量 - 大于0时为设置的子图数量 小于等于0时子图数量为1</param>
+            <param name="nPoints">点数量 - 大于0时为设置的点数量 小于等于0时不设置点数量</param>
+            <param name="sMainTitle">主标题</param>
+            <param name="sSubTitle">副标题</param>
+            <param name="sAxisLabels">X/Y坐标轴标签 - 数组维数为2</param>
+            <param name="fAxisRange">X/Y坐标轴范围,当最小值大于等于最大值时,坐标轴范围为自动,数组维数为2</param>
+        </member>
+        <member name="M:GigaDll.GigaSimpleGraph.ModifySimpleGraphBasic(Gigasoft.ProEssentials.Pego)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pego1"></param>
+        </member>
+        <member name="M:GigaDll.GigaSimpleGraph.CreateSingleSimpleGraphPointStatic(Gigasoft.ProEssentials.Pego,System.Int32,System.Int32,System.Single)">
+            <summary>
+            绘制一个点,点的总数量确定,不需要动态增加
+            </summary>
+            <param name="Pego1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iPointIndex">点索引</param>
+            <param name="fY">Y坐标</param>
+        </member>
+        <member name="M:GigaDll.GigaSimpleGraph.CreateSingleSimpleGraphPointDynamic(Gigasoft.ProEssentials.Pego,System.Int32,System.Int32,System.Single)">
+            <summary>
+            绘制一个点,点的总数量不确定,需要动态增加
+            </summary>
+            <param name="Pego1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iPointIndex">点索引</param>
+            <param name="fY">Y坐标</param>
+        </member>
+        <member name="M:GigaDll.GigaSimpleGraph.UpdateSingleSimpleGraphPointValue(Gigasoft.ProEssentials.Pego,System.Int32,System.Int32,System.Single)">
+            <summary>
+            更新一个指定点的Y值
+            </summary>
+            <param name="Pego1">绘图对象</param>
+            <param name="iSubSetIndex">子图索引</param>
+            <param name="iPointIndex">点索引</param>
+            <param name="fY">Y坐标</param>
+        </member>
+        <member name="M:GigaDll.GigaSimpleGraph.SetSimpleGraphAxisRange(Gigasoft.ProEssentials.Pego,System.Double[])">
+            <summary>
+            手动设定坐标范围
+            </summary>
+            <param name="Pego1">绘图对象</param>
+            <param name="fYAxisRange">坐标数组</param>
+        </member>
+        <member name="M:GigaDll.GigaSimpleGraph.ModifySimpleGraphProperties(Gigasoft.ProEssentials.Pego,System.Int32)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pego1">绘图对象</param>
+            <param name="iPointIndex">点索引</param>
+        </member>
+        <member name="M:GigaDll.GigaSimpleGraph.GetSimpleGraphAxisRange(Gigasoft.ProEssentials.Pego)">
+            <summary>
+            获取坐标范围
+            </summary>
+            <param name="Pego1"></param>
+        </member>
+        <member name="M:GigaDll.GigaSimpleGraph.ModifySimpleGraphProperties_SubTitle(Gigasoft.ProEssentials.Pego,System.String)">
+            <summary>
+            临时修改图像属性 - 可任意扩展/重载
+            </summary>
+            <param name="Pego1"></param>
+            <param name="sSubTitle">点索引</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,262 @@
+{
+  "index": 2018121010000003,
+  "name": "2018年12月10日16:18:32创建的仿真任务",
+  "m_flight_mission": {
+    "index": 21000637,
+    "e_type": 2001,
+    "v_target": [
+      {
+        "index": 1,
+        "m_target_pos": {
+          "x": 92.21978327,
+          "y": 56.30353501,
+          "z": 7.92
+        },
+        "d_IR_requirment": 999.0,
+        "d_EO_requirment": 999.0,
+        "d_SAR_requirment": 999.0,
+        "d_preference": 0.1
+      }
+    ],
+    "s_describe": ""
+  },
+  "m_flight_scene": {
+    "index": 60000081,
+    "name": "随机的飞行场景0034",
+    "scene_description": "随机的飞行场景0034",
+    "m_coordinate": {
+      "d_X_MIN": 0.0,
+      "d_X_MAX": 100.0,
+      "d_Y_MIN": 0.0,
+      "d_Y_MAX": 100.0,
+      "d_Altitude_MIN": 0.0,
+      "d_Altitude_MAX": 12.0,
+      "refLongitude": 120.0,
+      "refLatitude": 40.0,
+      "refPoint": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "m_environment": {
+      "e_weather": 0,
+      "e_period": 0
+    },
+    "m_threats": {
+      "v_threats": [
+        {
+          "m_threat_center": {
+            "x": 43.0,
+            "y": 97.0,
+            "z": 0.0
+          },
+          "d_radius": 12.971211204287171,
+          "index": 80100001,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 2.0,
+            "y": 9.0,
+            "z": 0.0
+          },
+          "d_radius": 12.971211204287171,
+          "index": 80100002,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 88.0,
+            "y": 99.0,
+            "z": 0.0
+          },
+          "d_radius": 14.707971021359352,
+          "index": 80100003,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 74.0,
+            "y": 83.0,
+            "z": 0.0
+          },
+          "d_radius": 14.707971021359352,
+          "index": 80100004,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 17.0,
+            "y": 80.0,
+            "z": 0.0
+          },
+          "d_radius": 14.707971021359352,
+          "index": 80100005,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 67.0,
+            "y": 16.0,
+            "z": 0.0
+          },
+          "d_radius": 13.866808062264571,
+          "index": 80100006,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 75.0,
+            "y": 91.0,
+            "z": 0.0
+          },
+          "d_radius": 12.009008051323985,
+          "index": 80100007,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 57.0,
+            "y": 81.0,
+            "z": 0.0
+          },
+          "d_radius": 13.426479172551357,
+          "index": 80100008,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 61.0,
+            "y": 73.0,
+            "z": 0.0
+          },
+          "d_radius": 12.009008051323985,
+          "index": 80100009,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 21.0,
+            "y": 62.0,
+            "z": 0.0
+          },
+          "d_radius": 14.707971021359352,
+          "index": 80100010,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 5.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "d_radius": 12.009008051323985,
+          "index": 80100011,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 91.0,
+            "y": 12.0,
+            "z": 0.0
+          },
+          "d_radius": 13.866808062264571,
+          "index": 80100012,
+          "b_threat_detected": false
+        },
+        {
+          "m_threat_center": {
+            "x": 32.0,
+            "y": 54.0,
+            "z": 0.0
+          },
+          "d_radius": 13.426479172551357,
+          "index": 80100013,
+          "b_threat_detected": false
+        }
+      ]
+    }
+  },
+  "m_uav_group": {
+    "index": 90000603,
+    "v_UAVs": [
+      {
+        "UAV_Index": 91010001,
+        "name": "iFly综合无人机",
+        "uavType": "雪雁",
+        "d_flight_velocity_MIN": 0.05,
+        "d_flight_velocity_MAX": 0.33,
+        "d_flight_altitude_MIN": 20.0,
+        "d_flight_altitude_MAX": 0.0,
+        "d_yaw_rate_MAX": 0.05236,
+        "d_roll_rate_MAX": 0.05222,
+        "d_pitch_rate_MAX": 0.05222,
+        "d_fuel_total_quantity": 400.0,
+        "d_fuel_consuming_rate": 0.0,
+        "d_flight_time_MAX": 108000.0,
+        "d_cost": 100000.0,
+        "d_defense_capability": 0.9,
+        "e_hitting_mode": 2,
+        "v_weapon": [
+          {
+            "weapon_index": 9400,
+            "s_weaponType": "导弹",
+            "d_weapon_cost": 1000.0,
+            "v_weapon_capability": [
+              {
+                "s_hitting_mode": "综合考虑",
+                "d_hitting_range": 1000.0,
+                "d_hitting_success_probility": 0.4
+              }
+            ]
+          }
+        ],
+        "v_threat_sensor": [
+          {
+            "threat_sensor_index": 9200,
+            "threat_sensor_type": "雷达",
+            "d_threat_sensor_range": 40.0,
+            "d_threat_sensor_power": 0.0
+          }
+        ],
+        "v_image_sensor": [
+          {
+            "image_sensor_index": 9300,
+            "image_sensor_type": "IR",
+            "d_image_sensor_range": 100.0,
+            "d_image_sensor_power": 0.01
+          },
+          {
+            "image_sensor_index": 9301,
+            "image_sensor_type": "EO",
+            "d_image_sensor_range": 100.0,
+            "d_image_sensor_power": 0.002
+          },
+          {
+            "image_sensor_index": 9302,
+            "image_sensor_type": "SAR",
+            "d_image_sensor_range": 100.0,
+            "d_image_sensor_power": 0.1
+          }
+        ],
+        "m_start_state": {
+          "m_location": {
+            "x": 1.38757839,
+            "y": 97.63030731,
+            "z": 7.92
+          },
+          "d_flight_direction": 0.0,
+          "d_flight_velocity": 0.05,
+          "i_flight_direction_vertical": 0,
+          "d_flight_velocity_vertical": 0.0,
+          "d_specific_time": 0.0
+        }
+      }
+    ],
+    "s_description": "随机的无人机组"
+  },
+  "e_assignment_method": 3002,
+  "e_planning_method": 4001,
+  "e_execution_mode": 1101
+}

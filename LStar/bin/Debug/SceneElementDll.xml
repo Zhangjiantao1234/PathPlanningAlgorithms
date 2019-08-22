@@ -1,0 +1,4685 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SceneElementDll</name>
+    </assembly>
+    <members>
+        <member name="T:SceneElementDll.Basic.ECoordinateType">
+            <summary>
+            坐标系类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.ECoordinateType.Distance">
+            <summary>
+            距离坐标系
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.ECoordinateType.LongitudeAndLatitude">
+            <summary>
+            经纬度坐标系
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.GaussSphere">
+            <summary>
+            高斯投影中所选用的参考椭球
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.GaussSphere.Beijing54">
+            <summary>
+            Beijing54
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.GaussSphere.Xian80">
+            <summary>
+            Xian80
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.GaussSphere.WGS84">
+            <summary>
+            WGS84
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EThreatModelingStyle">
+            <summary>
+            威胁建模方式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EThreatModelingStyle.Probability">
+            <summary>
+            概率
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EThreatModelingStyle.Edge">
+            <summary>
+            边界
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EFlightMissionType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EFlightMissionType.Reconnaissance">
+            <summary>
+            协同侦察
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EFlightMissionType.FacilityAttack">
+            <summary>
+            协同攻击关键设施
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EFlightMissionType.WeaponAttack">
+            <summary>
+            协同攻击防空系统
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EFlightMissionType.SEAD">
+            <summary>
+            对敌防空压制
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EFlightMissionType.Search">
+            <summary>
+            协同搜索
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EFlightMissionType.DynamicRealTime">
+            <summary>
+            实时动态任务规划
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EFlightMissionType.ReconnaissanceAndSearchMixed">
+            <summary>
+            协同侦察搜索混合任务
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EMissionAssignmentMethod">
+            <summary>
+            任务分配算法类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method1">
+            <summary>
+            协同侦查任务的枚举算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method2">
+            <summary>
+            协同侦查任务的遗传算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method3">
+            <summary>
+            面向关键设施的协同攻击枚举算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method4">
+            <summary>
+            面向关键设施的协同攻击的遗传算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method5">
+            <summary>
+            对敌防空压制的枚举算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method6">
+            <summary>
+            对敌防空压制的时序约束算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method7">
+            <summary>
+            面向敌对目标的协同攻击的时序约束算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method8">
+            <summary>
+            分布式协同攻击市场拍卖算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method9">
+            <summary>
+            对敌防空压制的满意决策算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method10">
+            <summary>
+            基于区域覆盖的协同搜索算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method11">
+            <summary>
+            分布式协同侦查市场拍卖算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method12">
+            <summary>
+            手动任务分配方法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.Method13">
+            <summary>
+            实时动态任务分配
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.ReconnaissanceAndSearchMethod">
+            <summary>
+            侦查搜索混合算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionAssignmentMethod.ReconnaissanceAndSearchMethodTest">
+            <summary>
+            侦查搜索混合算法 刘洋提供 版本
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EPathPlanningMethod">
+            <summary>
+            航迹规划算法类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.Voronoi">
+            <summary>
+            Voronoi图法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.RRT">
+            <summary>
+            RRT算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.PRM">
+            <summary>
+            PRM算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.AStar">
+            <summary>
+            AStar算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.MILP">
+            <summary>
+            MILP算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.FBCRI">
+            <summary>
+            FBCRI算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.BLP">
+            <summary>
+            BLP算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.Bouncing">
+            <summary>
+            Bouncing算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.Evolution">
+            <summary>
+            Evolution算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.BouncingForSearch">
+            <summary>
+            Bouncing算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.RRTForSEAD">
+            <summary>
+            Bouncing算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.RRT3D">
+            <summary>
+            3维RRT算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.Evolution3D">
+            <summary>
+            3维Evolution算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.Bouncing3D">
+            <summary>
+            3维Evolution算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.DynamicRealRRT">
+            <summary>
+            实时动态RRT算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.RRTStar">
+            <summary>
+            2D RRT*算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.NullAlgorithm">
+            <summary>
+            空算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMethod.DllImportAlgorithm">
+            <summary>
+            外部导入算法
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EWeatherType">
+            <summary>
+            天气类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EWeatherType.Sunny">
+            <summary>
+            晴天
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EWeatherType.Snow">
+            <summary>
+            雪天
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EWeatherType.Rain">
+            <summary>
+            雨天
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EWeatherType.Foggy">
+            <summary>
+            雾天
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.ETimePeriodType">
+            <summary>
+            环境类型
+            刘洋12.10.2018修改，和数据库反了。。。。
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.ETimePeriodType.Dark">
+            <summary>
+            晚上
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.ETimePeriodType.Bright">
+            <summary>
+            白天
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EAircraftTrajectoryType">
+            <summary>
+            其他空中飞行器轨迹类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EAircraftTrajectoryType.Line">
+            <summary>
+            直线
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EAircraftTrajectoryType.Cycle">
+            <summary>
+            圆
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EAircraftTrajectoryType.Random">
+            <summary>
+            随机
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EUAVHittingMode">
+            <summary>
+            无人机攻击模式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVHittingMode.Attack">
+            <summary>
+            普通攻击
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVHittingMode.SEAD">
+            <summary>
+            SEAD攻击
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVHittingMode.Synthesize">
+            <summary>
+            综合攻击
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EMissionExecutionMode">
+            <summary>
+            飞行任务执行类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionExecutionMode.Static">
+            <summary>
+            静态
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EMissionExecutionMode.Realtime">
+            <summary>
+            实时
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EAssignmentMode">
+            <summary>
+            任务分配计算模式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EAssignmentMode.Centralized">
+            <summary>
+            集中式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EAssignmentMode.Distributed">
+            <summary>
+            分布式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EAssignmentMode.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EPathPlanningMode">
+            <summary>
+            航迹规划计算模式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMode.Centralized">
+            <summary>
+            集中式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMode.Distributed">
+            <summary>
+            分布式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EPathPlanningMode.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EScenarionState">
+            <summary>
+            仿真任务状态
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EScenarionState.New">
+            <summary>
+            新建的仿真任务
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EScenarionState.Waiting">
+            <summary>
+            已选中等待执行的仿真任务
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EScenarionState.RunAssignment">
+            <summary>
+            正在执行任务分配的仿真任务
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EScenarionState.RunPathPlanning">
+            <summary>
+            正在执行航迹规划的仿真任务
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EScenarionState.Complete">
+            <summary>
+            仿真任务已完成
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EScenarionState.None">
+            <summary>
+            未知状态
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EControlCenterStatus">
+            <summary>
+            指控中心状态
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.Closed">
+            <summary>
+            关机
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.Open">
+            <summary>
+            开机
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.Waiting">
+            <summary>
+            等待
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.ExecuteAssignment">
+            <summary>
+            执行任务分配
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.AssignmentComplete">
+            <summary>
+            任务分配完成
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.ExecutePathPlanning">
+            <summary>
+            执行航迹规划
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.PathPlanningComplete">
+            <summary>
+            航迹规划完成
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.Pause">
+            <summary>
+            暂停
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.Termination">
+            <summary>
+            终止
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.Playback">
+            <summary>
+            回放
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.PausePlayback">
+            <summary>
+            暂停回放
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.TerminatePlayback">
+            <summary>
+            终止回放
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.MissionComplete">
+            <summary>
+            仿真完成
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EControlCenterStatus.UnKnown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EUAVClientStatus">
+            <summary>
+            无人机客户端状态
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.Closed">
+            <summary>
+            关机
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.Open">
+            <summary>
+            开机
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.WaitingMission">
+            <summary>
+            等待任务
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.WaitingExecution">
+            <summary>
+            等待执行
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.ExecuteAssignment">
+            <summary>
+            执行任务分配
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.AssignmentComplete">
+            <summary>
+            任务分配完成
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.ExecutePathPlanning">
+            <summary>
+            执行航迹规划
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.PathPlanningComplete">
+            <summary>
+            航迹规划完成
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.Pause">
+            <summary>
+            暂停
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.Termination">
+            <summary>
+            终止
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.MissionComplete">
+            <summary>
+            仿真完成
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EUAVClientStatus.UnKnown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.EnumConverter">
+            <summary>    
+            枚举转换器 - 可将英文名称转换为中文   
+            用此类之前，必须保证在枚举项中定义了Description    
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.EnumConverter.dic">
+            <summary>
+            枚举项集合
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.LoadDic(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            加载枚举项集合
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            是否可从来源转换
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            从来源转换
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            是否可转换
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumConverter.GetEnumValueDesDic(System.Type)">
+            <summary>
+            记载枚举的值+描述
+            </summary>
+            <param name="enumType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.Basic.EnumsConversion">
+            <summary>
+            枚举转换类
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetEnumDictionary(System.Type)">
+            <summary>        
+            获取枚举项+描述 - 返回 Dic(枚举项，描述)       
+            </summary>       
+            <param name="enumType"></param>        
+            <returns>Dic(枚举项，描述)</returns>        
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetEnumDescription(System.Object)">
+            <summary>
+            获得某个枚举项的描述
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetEnumDescription(System.String,System.Type)">
+            <summary>
+            获得某个枚举项的描述
+            </summary>
+            <param name="sEnumValue"></param>
+            <param name="enumType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetEnumValue(System.String,System.Type)">
+            <summary>
+            根据枚举项的描述获取键值
+            </summary>
+            <param name="sDescription">枚举项描述</param>
+            <param name="enumType">枚举类型</param>
+            <returns>键值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetNVCFromEnumValue(System.Type)">
+            <summary>
+            从枚举类型和它的特性读出并返回一个键值对
+            </summary>
+            <param name="enumType">Type,该参数的格式为typeof(需要读的枚举类型)</param>
+            <returns>键值对</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetNVCStringFromEnumValue(System.Type)">
+            <summary>
+            从枚举类型和它的特性读出并返回一个键值对
+            </summary>
+            <param name="enumType">Type,该参数的格式为typeof(需要读的枚举类型)</param>
+            <returns>键值对</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetEnumArray(System.Type)">
+            <summary>
+            将枚举所有项存入一个序列
+            </summary>
+            <param name="enumType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetControlCenterStatus(System.String)">
+            <summary>
+            根据指控中心服务器端状态字符串获取状态对象
+            </summary>
+            <param name="sStatus">指控中心服务器端状态字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetUAVClientStatus(System.String)">
+            <summary>
+            根据无人机客户端状态字符串获取状态对象
+            </summary>
+            <param name="sStatus">无人机客户端状态字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetCoordinateType(System.String)">
+            <summary>
+            根据坐标系类型字符串获取坐标系类型枚举值
+            </summary>
+            <param name="sCoordinateType">坐标系类型字符串</param>
+            <returns>坐标系类型枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetWeatherType(System.String)">
+            <summary>
+            根据天气类型字符串获取天气类型枚举值
+            </summary>
+            <param name="sWeatherType">天气类型字符串</param>
+            <returns>天气类型枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetTimePeriodType(System.String)">
+            <summary>
+            根据天气类型字符串获取天气类型枚举值
+            </summary>
+            <param name="sWeatherType">天气类型字符串</param>
+            <returns>天气类型枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetTrajectoryType(System.String)">
+            <summary>
+            根据其他飞行器轨迹类型字符串获取其他飞行器轨迹类型枚举值
+            </summary>
+            <param name="sTrajectoryType">其他飞行器轨迹类型字符串</param>
+            <returns>其他飞行器轨迹类型枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetFlightMissionType(System.String)">
+            <summary>
+            根据飞行任务类型字符串获取飞行任务类型枚举值
+            </summary>
+            <param name="sFlightMissionType">飞行任务类型字符串</param>
+            <returns>飞行任务类型枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetAssignmentMethod(System.String)">
+            <summary>
+            根据任务分配算法类型字符串获取任务分配算法类型枚举值
+            </summary>
+            <param name="sAssignmentMethod">任务分配算法类型字符串</param>
+            <returns>任务分配算法类型枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetPathPlanningMethod(System.String)">
+            <summary>
+            根据航迹规划算法类型字符串获取航迹规划算法类型枚举值
+            </summary>
+            <param name="sPathPlanningMethod">航迹规划算法类型字符串</param>
+            <returns>航迹规划算法类型枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetScenarionState(System.String)">
+            <summary>
+            根据仿真任务状态字符串获取仿真任务状态枚举值
+            </summary>
+            <param name="sScenarionState">仿真任务状态字符串</param>
+            <returns>仿真任务状态枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetMissionExecutionMode(System.String)">
+            <summary>
+            根据飞行任务执行类型字符串获取飞行任务执行类型枚举值
+            </summary>
+            <param name="sMissionExecutionMode">飞行任务执行类型字符串</param>
+            <returns>飞行任务执行类型枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetAssignmentMode(System.String)">
+            <summary>
+            根据任务分配计算模式字符串获取任务分配计算模式枚举值
+            </summary>
+            <param name="sAssignmentMode">任务分配计算模式字符串</param>
+            <returns>任务分配计算模式枚举值</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.EnumsConversion.GetPathPlanningMode(System.String)">
+            <summary>
+            根据航迹规划计算模式字符串获取航迹规划计算模式枚举值
+            </summary>
+            <param name="sPathPlanningMode">航迹规划计算模式字符串</param>
+            <returns>航迹规划计算模式枚举值</returns>
+        </member>
+        <member name="T:SceneElementDll.Basic.FPoint2">
+            <summary>
+            顶点 - 用于表示平面空间中的一个实数点
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.FPoint2.x">
+            <summary>
+            X坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Basic.FPoint2.X">
+            <summary>
+            获取或设置X坐标
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.FPoint2.y">
+            <summary>
+            Y坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Basic.FPoint2.Y">
+            <summary>
+            获取或设置Y坐标
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint2.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint2.#ctor(System.Double,System.Double)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint2.ToString">
+            <summary>
+            重载ToString函数,矩阵的字符串输出
+            </summary>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint2.GetHashCode">
+            <summary>
+            获取HashCode
+            </summary>
+            <returns>Hash代码</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint2.Equals(System.Object)">
+            <summary>
+            重载Equals,比较两个点是否相等
+            </summary>
+            <param name="o">待比较对象</param>
+            <returns>两个点是否相同</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint2.op_Equality(SceneElementDll.Basic.FPoint2,SceneElementDll.Basic.FPoint2)">
+            <summary>
+            重载==,比较两个点是否相等
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>两个点是否相同</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint2.op_Inequality(SceneElementDll.Basic.FPoint2,SceneElementDll.Basic.FPoint2)">
+            <summary>
+            重载!=,比较两个点是否不相等
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>两个点是否不相等</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint2.DistanceBetweenTwoPlanePoints(SceneElementDll.Basic.FPoint2,SceneElementDll.Basic.FPoint2)">
+            <summary>
+            计算两个点之间的距离
+            </summary>
+            <param name="mFPoint1">点1</param>
+            <param name="mFPoint2">点2</param>
+            <returns>点之间的距离</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint2.ConvertToFPoint2(System.String,System.Char)">
+            <summary>
+            字符串转换为FPoint - "10,20,30" => [10,20,30]
+            </summary>
+            <param name="sFPoint">字符串</param>
+            <param name="splitChar">分隔符</param>
+            <returns>点之间的距离</returns>
+        </member>
+        <member name="T:SceneElementDll.Basic.FPoint3">
+            <summary>
+            顶点 - 用于表示空间中的一个实数点
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.FPoint3.z">
+            <summary>
+            Z坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Basic.FPoint3.Z">
+            <summary>
+            获取或设置Z坐标
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="fX">X坐标</param>
+            <param name="fY">Y坐标</param>
+            <param name="fZ">Z坐标</param>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.ToString">
+            <summary>
+            重载ToString函数,字符串输出
+            </summary>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.ToString(System.Int32)">
+            <summary>
+            重载ToString函数,字符串输出
+            </summary>
+            <param name="iPrecision">精度 - 小数点后位数</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.ToString(System.String)">
+            <summary>
+            重载ToString函数,字符串输出
+            </summary>
+            <param name="cDivision">分隔符</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.GetHashCode">
+            <summary>
+            获取HashCode
+            </summary>
+            <returns>Hash代码</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.Equals(System.Object)">
+            <summary>
+            重载Equals,比较两个点是否相等
+            </summary>
+            <param name="o">待比较对象</param>
+            <returns>两个点是否相同</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.EqualsInPlane(System.Object)">
+            <summary>
+            重载Equals,比较两个点的X和Y坐标是否相等
+            </summary>
+            <param name="o">待比较对象</param>
+            <returns>两个点是否相同</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.op_Equality(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.FPoint3)">
+            <summary>
+            重载==,比较两个点是否相等
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>两个点是否相同</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.op_Inequality(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.FPoint3)">
+            <summary>
+            重载!=,比较两个点是否不相等
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>两个点是否不相等</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.op_Addition(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.FPoint3)">
+            <summary>
+            加法运算 
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>点之和</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.op_Subtraction(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.FPoint3)">
+            <summary>
+            减法运算 
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>点之和</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.op_Multiply(System.Double,SceneElementDll.Basic.FPoint3)">
+            <summary>
+            点的数乘(左乘)运算
+            </summary>
+            <param name="k">数字</param>
+            <param name="mPoint">点</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.op_Multiply(SceneElementDll.Basic.FPoint3,System.Double)">
+            <summary>
+            点的数乘(右乘)运算
+            </summary>
+            <param name="mPoint">点</param>
+            <param name="k">数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.op_Division(SceneElementDll.Basic.FPoint3,System.Double)">
+            <summary>
+            点的数除运算
+            </summary>
+            <param name="mPoint">点</param>
+            <param name="divisor">数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.SetValue(System.Double,System.Double,System.Double)">
+            <summary>
+            设置坐标值
+            </summary>
+            <param name="xValue">X坐标</param>
+            <param name="yValue">Y坐标</param>
+            <param name="zValue">Z坐标</param>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.DistanceBetweenTwoSpacePoints(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.FPoint3)">
+            <summary>
+            计算两个点之间的距离
+            </summary>
+            <param name="mFPoint1">点1</param>
+            <param name="mFPoint2">点2</param>
+            <returns>点之间的距离</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.DistanceBetweenTwoSpacePointsXY(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.FPoint3)">
+            <summary>
+            计算两个点之间在X-Y平面上的水平距离
+            </summary>
+            <param name="mFPoint1">点1</param>
+            <param name="mFPoint2">点2</param>
+            <returns>点之间X-Y平面上的水平距离</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.FPoint3.ConvertToFPoint3(System.String,System.Char)">
+            <summary>
+            字符串转换为FPoint - "10,20,30" => [10,20,30]
+            </summary>
+            <param name="sFPoint">字符串</param>
+            <param name="splitChar">分隔符</param>
+            <returns>点之间的距离</returns>
+        </member>
+        <member name="T:SceneElementDll.Basic.PConstant">
+            <summary>
+            常量定义类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.PI">
+            <summary>
+            PI常量 = 3.14159265358979323846 2643383279 5028841971
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.E">
+            <summary>
+            e常量 = 2.78
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.EARTH_RADIUS_WGS84">
+            <summary>
+            地球半径(WGS84)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.EARTH_RADIUS_Xian80">
+            <summary>
+            地球半径(Xian80)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.EARTH_RADIUS_Beijing54">
+            <summary>
+            地球半径(Beijing54)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.MAX32INTEGER">
+            <summary>
+            32位整数极大值
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.MIN32INTEGER">
+            <summary>
+            32位整数极小值
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.MAX64INTEGER">
+            <summary>
+            64位整数极大值
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.MIN64INTEGER">
+            <summary>
+            64位整数极小值
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.MAX64DOUBLE">
+            <summary>
+            双精度(64位)浮点数极大值
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.PConstant.MIN64DOUBLE">
+            <summary>
+            双精度(64位)浮点数极小值
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Basic.IPoint2">
+            <summary>
+            顶点 - 用于表示平面空间中的一个整数点
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.IPoint2.x">
+            <summary>
+            X坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Basic.IPoint2.X">
+            <summary>
+            获取或设置X坐标
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.IPoint2.y">
+            <summary>
+            Y坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Basic.IPoint2.Y">
+            <summary>
+            获取或设置Y坐标
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint2.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint2.#ctor(System.Int32,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iX">X坐标</param>
+            <param name="iY">Y坐标</param>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint2.ToString">
+            <summary>
+            重载ToString函数,矩阵的字符串输出
+            </summary>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint2.GetHashCode">
+            <summary>
+            获取HashCode
+            </summary>
+            <returns>Hash代码</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint2.Equals(System.Object)">
+            <summary>
+            重载Equals,比较两个点是否相等
+            </summary>
+            <param name="o">待比较对象</param>
+            <returns>两个点是否相同</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint2.op_Equality(SceneElementDll.Basic.IPoint2,SceneElementDll.Basic.IPoint2)">
+            <summary>
+            重载==,比较两个点是否相等
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>两个点是否相同</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint2.op_Inequality(SceneElementDll.Basic.IPoint2,SceneElementDll.Basic.IPoint2)">
+            <summary>
+            重载!=,比较两个点是否不相等
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>两个点是否不相等</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint2.DistanceBetweenTwoPlanePoints(SceneElementDll.Basic.IPoint2,SceneElementDll.Basic.IPoint2)">
+            <summary>
+            计算两个点之间的距离
+            </summary>
+            <param name="mIPoint1">点1</param>
+            <param name="mIPoint2">点2</param>
+            <returns>点之间的距离</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint2.ConvertToIPoint2(System.String,System.Char)">
+            <summary>
+            字符串转换为IPoint - "10,20,30" => [10,20,30]
+            </summary>
+            <param name="sIPoint">字符串</param>
+            <param name="splitChar">分隔符</param>
+            <returns>点之间的距离</returns>
+        </member>
+        <member name="T:SceneElementDll.Basic.IPoint3">
+            <summary>
+            顶点 - 用于表示空间中的一个整数点
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Basic.IPoint3.z">
+            <summary>
+            Z坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Basic.IPoint3.Z">
+            <summary>
+            获取或设置Z坐标
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iX">X坐标</param>
+            <param name="iY">Y坐标</param>
+            <param name="iZ">Z坐标</param>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.ToString">
+            <summary>
+            重载ToString函数,字符串输出
+            </summary>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.ToString(System.Int32)">
+            <summary>
+            重载ToString函数,字符串输出
+            </summary>
+            <param name="iPrecision">精度 - 小数点后位数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.ToString(System.String)">
+            <summary>
+            重载ToString函数,字符串输出
+            </summary>
+            <param name="cDivision">分隔符</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.GetHashCode">
+            <summary>
+            获取HashCode
+            </summary>
+            <returns>Hash代码</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.Equals(System.Object)">
+            <summary>
+            重载Equals,比较两个点是否相等
+            </summary>
+            <param name="o">待比较对象</param>
+            <returns>两个点是否相同</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.op_Equality(SceneElementDll.Basic.IPoint3,SceneElementDll.Basic.IPoint3)">
+            <summary>
+            重载==,比较两个点是否相等
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>两个点是否相同</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.op_Inequality(SceneElementDll.Basic.IPoint3,SceneElementDll.Basic.IPoint3)">
+            <summary>
+            重载!=,比较两个点是否不相等
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>两个点是否不相等</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.op_Addition(SceneElementDll.Basic.IPoint3,SceneElementDll.Basic.IPoint3)">
+            <summary>
+            加法运算 
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>点之和</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.op_Subtraction(SceneElementDll.Basic.IPoint3,SceneElementDll.Basic.IPoint3)">
+            <summary>
+            减法运算 
+            </summary>
+            <param name="p1">点1</param>
+            <param name="p2">点2</param>
+            <returns>点之和</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.op_Multiply(System.Double,SceneElementDll.Basic.IPoint3)">
+            <summary>
+            点的实数乘(左乘)运算
+            </summary>
+            <param name="k">数字</param>
+            <param name="mPoint">点</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.op_Multiply(System.Int32,SceneElementDll.Basic.IPoint3)">
+            <summary>
+            点的整数乘(左乘)运算
+            </summary>
+            <param name="k">数字</param>
+            <param name="mPoint">点</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.op_Multiply(SceneElementDll.Basic.IPoint3,System.Double)">
+            <summary>
+            点的实数乘(右乘)运算
+            </summary>
+            <param name="mPoint">点</param>
+            <param name="k">数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.op_Multiply(SceneElementDll.Basic.IPoint3,System.Int32)">
+            <summary>
+            点的整数乘(右乘)运算
+            </summary>
+            <param name="mPoint">点</param>
+            <param name="k">数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.op_Division(SceneElementDll.Basic.IPoint3,System.Double)">
+            <summary>
+            点的数除运算
+            </summary>
+            <param name="mPoint">点</param>
+            <param name="divisor">数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.SetValue(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            设置坐标值
+            </summary>
+            <param name="xValue">X坐标</param>
+            <param name="yValue">Y坐标</param>
+            <param name="zValue">Z坐标</param>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.DistanceBetweenTwoSpacePoints(SceneElementDll.Basic.IPoint3,SceneElementDll.Basic.IPoint3)">
+            <summary>
+            计算两个点之间的距离
+            </summary>
+            <param name="mIPoint1">点1</param>
+            <param name="mIPoint2">点2</param>
+            <returns>点之间的距离</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.DistanceBetweenTwoSpacePointsXY(SceneElementDll.Basic.IPoint3,SceneElementDll.Basic.IPoint3)">
+            <summary>
+            计算两个点之间在X-Y平面上的水平距离
+            </summary>
+            <param name="mIPoint1">点1</param>
+            <param name="mIPoint2">点2</param>
+            <returns>点之间X-Y平面上的水平距离</returns>
+        </member>
+        <member name="M:SceneElementDll.Basic.IPoint3.ConvertToFPoint3(System.String,System.Char)">
+            <summary>
+            字符串转换为IPoint - "10,20,30" => [10,20,30]
+            </summary>
+            <param name="sIPoint">字符串</param>
+            <param name="splitChar">分隔符</param>
+            <returns>点之间的距离</returns>
+        </member>
+        <member name="T:SceneElementDll.Method.SEMissionAssignmentMethod">
+            <summary>
+            任务分配算法类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Method.SEMissionAssignmentMethod.m_MethodIndex">
+            <summary>
+            任务分配算法编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Method.SEMissionAssignmentMethod.MethodIndex">
+            <summary>
+            获取或设置任务分配算法编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Method.SEMissionAssignmentMethod.m_MethodName">
+            <summary>
+            任务分配算法名称
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Method.SEMissionAssignmentMethod.MethodName">
+            <summary>
+            获取或设置任务分配算法名称
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Method.SEMissionAssignmentMethod.m_MethodDescription">
+            <summary>
+            任务分配算法描述
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Method.SEMissionAssignmentMethod.MethodDescription">
+            <summary>
+            获取或设置任务分配算法描述
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Method.SEMissionAssignmentMethod.m_IsValid">
+            <summary>
+            任务分配算法是否有效
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Method.SEMissionAssignmentMethod.IsValid">
+            <summary>
+            获取或设置任务分配算法是否有效
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Method.SEMissionAssignmentMethod.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Method.SEMissionAssignmentMethod.#ctor(SceneElementDll.Basic.EMissionAssignmentMethod)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mMissionAssignmentMethodName">任务分配算法</param>
+        </member>
+        <member name="M:SceneElementDll.Method.SEMissionAssignmentMethod.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.Method.SEPathPlanningMethod">
+            <summary>
+            航迹规划算法类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Method.SEPathPlanningMethod.m_MethodIndex">
+            <summary>
+            航迹规划算法编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Method.SEPathPlanningMethod.MethodIndex">
+            <summary>
+            获取或设置航迹规划算法编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Method.SEPathPlanningMethod.m_MethodName">
+            <summary>
+            航迹规划算法名称
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Method.SEPathPlanningMethod.MethodName">
+            <summary>
+            获取或设置航迹规划算法名称
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Method.SEPathPlanningMethod.m_MethodDescription">
+            <summary>
+            航迹规划算法描述
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Method.SEPathPlanningMethod.MethodDescription">
+            <summary>
+            获取或设置航迹规划算法描述
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Method.SEPathPlanningMethod.m_IsValid">
+            <summary>
+            航迹规划算法是否有效
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Method.SEPathPlanningMethod.IsValid">
+            <summary>
+            获取或设置航迹规划算法是否有效
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Method.SEPathPlanningMethod.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Method.SEPathPlanningMethod.#ctor(SceneElementDll.Basic.EPathPlanningMethod)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mPathPlanningMethodName">航迹规划算法</param>
+        </member>
+        <member name="M:SceneElementDll.Method.SEPathPlanningMethod.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.Mission.SEMissionRegionTarget">
+            <summary>
+            区域任务目标
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionRegionTarget.m_TargetDescription">
+            <summary>
+            目标描述
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionRegionTarget.TargetDescription">
+            <summary>
+            设置或获取目标描述
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionRegionTarget.m_strTargetForMissionType">
+            <summary>
+            目标点所针对的区域类型，默认为复杂侦察任务
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionRegionTarget.TargetForMissionType">
+            <summary>
+            获取或设置目标点所针对的目标类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionRegionTarget.m_VertexsOnGround">
+            <summary>
+            地面角点坐标，至少有3个点 - 顺时针方向
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionRegionTarget.VertexsOnGround">
+            <summary>
+            设置或获取地面角点坐标 - 顺时针方向
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionRegionTarget.VertexNumber">
+            <summary>
+            设置或获取地面角点数量
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionRegionTarget.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionRegionTarget.#ctor(SceneElementDll.Mission.SEMissionRegionTarget)">
+            <summary>
+            区域目标类型的构造函数
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionRegionTarget.#ctor(System.Int32,SceneElementDll.Basic.FPoint3[],System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数 - 没有值的项赋为0
+            </summary>
+            <param name="iIndex">侦察区域编号</param>
+            <param name="fVertexs">地面角点数组 - 顺时针方向输入</param>
+            <param name="fEarliestTime">最早侦察时间</param>
+            <param name="fLatestTime">最晚侦查时间</param>
+            <param name="fIRRequirement">IR传感器分辨率要求</param>
+            <param name="fEORequirement">EO传感器分辨率要求</param>
+            <param name="fSARRequirement">SAR传感器分辨率要求</param>
+            <param name="mSAMHittingProbability">打击概率</param>
+            <param name="mPredilection">精度</param>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionRegionTarget.OutputRegionPos(System.Single[]@,System.Single[]@,System.String[]@)">
+            <summary>
+            fPointsX,fPointsY,sTexts输出
+            </summary>
+            <param name="fPointsX"></param>
+            <param name="fPointsY"></param>
+            <param name="sTexts"></param>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionRegionTarget.CalRegionPos">
+            <summary>
+            当vertexsOnGround和TargetPoint有值时去刷新
+            将vertexsOnGround从相对坐标刷成绝对坐标
+            ThreadSimuliation使用
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionRegionTarget.UpdateTargetPoint">
+             <summary>
+            计算重心并刷给TargetPoint 
+            ThreadSimuliation使用
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionRegionTarget.GetRegionArea">
+            <summary>
+            获取该目标区域的面积
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionRegionTarget.IsPointInside(SceneElementDll.Basic.FPoint2)">
+            <summary>
+            检查Point是否在区域内部
+            </summary>
+            <param name="mPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.Mission.SEMissionType">
+            <summary>
+            任务类型类
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionType.MissionTypeIndex">
+            <summary>
+            获取或设置任务类型编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionType.m_MissionTypeName">
+            <summary>
+            任务类型名称
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionType.MissionTypeName">
+            <summary>
+            获取或设置任务类型名称
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionType.m_MissionTypeDescription">
+            <summary>
+            任务类型描述
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionType.MissionTypeDescription">
+            <summary>
+            获取或设置任务类型描述
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionType.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionType.#ctor(System.Int32,SceneElementDll.Basic.EFlightMissionType,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mMissionTypeIndex">任务类型编号</param>
+            <param name="mMissionTypeName">任务类型</param>
+            <param name="mMissionTypeDescription">任务类型描述</param>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionType.ToString">
+            <summary>
+            重载函数ToString()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.Mission.SEMissionTarget">
+            <summary>
+            任务目标点
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_TargetIndex">
+            <summary>
+            任务目标点编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.TargetIndex">
+            <summary>
+            获取或设置任务目标点编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_TargetPoint">
+            <summary>
+            任务目标点坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.TargetPoint">
+            <summary>
+            获取或设置任务目标点坐标
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_TargetDirection">
+            <summary>
+            任务目标点飞行方向
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.TargetDirection">
+            <summary>
+            获取或设置任务目标点飞行方向
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_EarliestStartTime">
+            <summary>
+             目标最早开始的时间
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.EarliestStartTime">
+            <summary>
+             获取或设置目标最早开始的时间
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_LatestStartTime">
+            <summary>
+             目标最晚开始的时间
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.LatestStartTime">
+            <summary>
+             获取或设置目标最晚开始的时间
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_IRRequirement">
+            <summary>
+             IR图像传感器分辨率需求
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.IRRequirement">
+            <summary>
+             获取或设置IR图像传感器分辨率需求
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_EORequirement">
+            <summary>
+             EO图像传感器分辨率需求
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.EORequirement">
+            <summary>
+             获取或设置EO图像传感器分辨率需求
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_SARRequirement">
+            <summary>
+             SAR图像传感器分辨率需求
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.SARRequirement">
+            <summary>
+             获取或设置SAR图像传感器分辨率需求
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_SAMHittingProbability">
+            <summary>
+             地空导弹目标对无人机的打击概率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.SAMHittingProbability">
+            <summary>
+             获取或设置地空导弹目标对无人机的打击概率
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_Predilection">
+            <summary>
+             目标偏好值
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.Predilection">
+            <summary>
+             获取或设置目标偏好值
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_PreTargets">
+            <summary>
+            前续目标点编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.PreTargets">
+            <summary>
+            前续目标点编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMissionTarget.m_ConTargets">
+            <summary>
+            同时目标点编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMissionTarget.ConTargets">
+            <summary>
+            同时目标点编号
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionTarget.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionTarget.#ctor(System.Int32,SceneElementDll.Basic.FPoint3,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数 - 没有值的项赋为0
+            </summary>
+            <param name = "mTargetIndex">目标点编号</param>
+            <param name = "fTargetPoint">目标点坐标</param>
+            <param name = "fEarliestTime">最早侦查时间</param>
+            <param name = "fLatestTime">最晚侦查时间</param>
+            <param name = "fIRRequirement">IR传感器分辨率要求</param>
+            <param name = "fEORequirement">EO传感器分辨率要求</param>
+            <param name = "fSARRequirement">SAR传感器分辨率要求</param>
+            <param name = "mSAMHittingProbability">打击概率</param>
+            <param name = "mPredilection">精度</param>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionTarget.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMissionTarget.Clone">
+            <summary>
+            深度拷贝
+            </summary>
+            <returns>任务目标点</returns>
+        </member>
+        <member name="T:SceneElementDll.Mission.SEMission">
+            <summary>
+            飞行任务类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMission.m_MissionIndex">
+            <summary>
+            飞行任务编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMission.MissionIndex">
+            <summary>
+            获取或设置飞行任务编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMission.m_MissionType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMission.MissionType">
+            <summary>
+            获取或设置任务目标点
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMission.m_MissionTargets">
+            <summary>
+            任务目标点
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMission.MissionTargets">
+            <summary>
+            获取或设置任务目标点
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMission.TargetNumber">
+            <summary>
+            获取或设置无人机组包含的无人机数量
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMission.m_MissionStartTime">
+            <summary>
+            任务开始时间
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMission.MissionStartTime">
+            <summary>
+            获取或设置任务开始时间
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMission.m_MissionEndTime">
+            <summary>
+            任务结束时间
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMission.MissionEndTime">
+            <summary>
+            获取或设置任务结束时间
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Mission.SEMission.m_MissionDescription">
+            <summary>
+            飞行任务描述
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Mission.SEMission.MissionDescription">
+            <summary>
+            获取或设置飞行任务描述
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMission.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMission.#ctor(SceneElementDll.Mission.SEMissionType,SceneElementDll.Mission.SEMissionTarget[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mMissionType">任务类型</param>
+            <param name="mMissionTargets">任务目标点</param>
+        </member>
+        <member name="M:SceneElementDll.Mission.SEMission.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Coordinate.SECoordinate">
+            <summary>
+            坐标系类
+            </summary>
+            <summary>
+            坐标系类 - 经纬度坐标系/距离坐标系的坐标轴范围定义
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_CoordinateIndex">
+            <summary>
+            坐标系编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.CoordinateIndex">
+            <summary>
+            获取或设置坐标系编号
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="minX">规划区域X轴下限</param>
+            <param name="maxX">规划区域X轴上限</param>
+            <param name="minY">规划区域Y轴下限</param>
+            <param name="maxY">规划区域Y轴上限</param>
+            <param name="minAltitude">规划区域Z轴下限</param>
+            <param name="maxAltitude">规划区域Z轴上限</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,SceneElementDll.Basic.FPoint3,System.Double,System.Double)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="minX">规划区域X轴下限</param>
+            <param name="maxX">规划区域X轴上限</param>
+            <param name="minY">规划区域Y轴下限</param>
+            <param name="maxY">规划区域Y轴上限</param>
+            <param name="minAltitude">规划区域Z轴下限</param>
+            <param name="maxAltitude">规划区域Z轴上限</param>
+            <param name="refePoint">参考点地面坐标</param>
+            <param name="refeLongitude">参考点经度</param>
+            <param name="refeLatitude">参考点纬度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.SetRange(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            设置坐标系范围
+            </summary>
+            <param name="minX">规划区域X轴下限</param>
+            <param name="maxX">规划区域X轴上限</param>
+            <param name="minY">规划区域Y轴上限</param>
+            <param name="maxY">规划区域Y轴上限</param>
+            <param name="minAltitude">规划区域Z轴下限</param>
+            <param name="maxAltitude">规划区域Z轴上限</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.SetRefePoint(SceneElementDll.Basic.FPoint3,System.Double,System.Double)">
+            <summary>
+            设置参考点及其经纬度
+            </summary>
+            <param name="refePoint">参考点地面坐标</param>
+            <param name="refeLongitude">参考点经度</param>
+            <param name="refeLatitude">参考点纬度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.Rad(System.Double)">
+            <summary>
+            度转换为弧度
+            </summary>
+            <param name="degree">度</param>
+            <returns>弧度</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.Degree(System.Double)">
+            <summary>
+            弧度转换为度
+            </summary>
+            <param name="rad">弧度</param>
+            <returns>度</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.FromDToC(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            由地面坐标转换为地心坐标
+            </summary>
+            <param name="fDPoint3">地面坐标</param>
+            <param name="gs">高斯投影中所选用的参考地球半径</param>
+            <returns>地心坐标</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.FromCToD(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            由地心坐标转换到地面坐标
+            </summary>
+            <param name="fCPoint3">地心坐标</param>
+            <param name="gs">高斯投影中所选用的参考地球半径</param>
+            <returns>地面坐标</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.FromLToC(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            由经纬度坐标转换到地心坐标  -  输入为角度制
+            </summary>
+            <param name="degreeLPoint3">经纬度坐标  -  输入为角度制</param>
+            <param name="gs">高斯投影中所选用的参考地球半径</param>
+            <returns>地心坐标</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.FromCToL(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            由地心坐标转换到经纬度坐标
+            </summary>
+            <param name="fCPoint3">地心坐标</param>
+            <param name="gs">高斯投影中所选用的参考地球半径</param>
+            <returns>经纬度坐标  -  角度制</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.FromLToD(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            由经纬度坐标转换为地面坐标  -  角度制
+            </summary>
+            <param name="degreeLPoint3">经纬度坐标  -  角度制</param>
+            <param name="gs">高斯投影中所选用的参考地球半径</param>
+            <returns>地面坐标</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.FromDToL(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            由地面坐标转换为经纬度坐标
+            </summary>
+            <param name="fDPoint3">地面坐标</param>
+            <param name="gs">高斯投影中所选用的参考地球半径</param>
+            <returns>经纬度坐标 - 角度制</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.DiffLongitude(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            从Point1开始逆时针旋转至Point2的经度差，期间纬度不变
+            </summary>
+            <param name="fDPoint1">起点</param>
+            <param name="fDPoint2">终点</param>
+            <param name="gs">地球半径</param>
+            <returns>经度差</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.DiffLatitude(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            从Point1开始逆时针旋转至Point2的纬度差，期间经度不变
+            </summary>
+            <param name="fDPoint1">起点</param>
+            <param name="fDPoint2">终点</param>
+            <param name="gs">地球半径</param>
+            <returns>纬度差</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.LatitudeWidth(SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            纬度的跨越范围
+            </summary>
+            <param name="gs">参考半径</param>
+            <returns>纬度跨越范围</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.ContainTheDPoint(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            是否包含该点 - 地面坐标系
+            </summary>
+            <param name="fDPoint">考察点</param>
+            <returns>true:包含;false:不包含</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.ContainTheLPoint(SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.GaussSphere)">
+            <summary>
+            是否包含该点 - 经纬坐标系
+            </summary>
+            <param name="fLPoint">考察点</param>
+            <param name="gs">地球半径</param>
+            <returns>true:包含;false:不包含</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Coordinate.SECoordinate.ToString">
+            <summary>
+            重载ToString()函数
+            返回坐标系范围
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_MinX">
+            <summary>
+            距离坐标系 - X轴下限
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.MinX">
+            <summary>
+            获取或设置 距离坐标系 - X轴下限
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_MaxX">
+            <summary>
+            距离坐标系 - X轴上限
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.MaxX">
+            <summary>
+            获取或设置 距离坐标系 - X轴上限
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_MinY">
+            <summary>
+            距离坐标系 - Y轴下限
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.MinY">
+            <summary>
+            获取或设置 距离坐标系 - Y轴下限
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_MaxY">
+            <summary>
+            距离坐标系 - Y轴上限
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.MaxY">
+            <summary>
+            获取或设置 距离坐标系 - Y轴上限
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_MinAltitude">
+            <summary>
+            经纬度坐标系/距离坐标系 - Z轴下限
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.MinAltitude">
+            <summary>
+            获取或设置 经纬度坐标系/距离坐标系 - Z轴下限
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_MaxAltitude">
+            <summary>
+            距离坐标系/经纬度坐标系 - Z轴上限
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.MaxAltitude">
+            <summary>
+            获取或设置距离坐标系/经纬度坐标系 - Z轴上限
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_RefeDPoint">
+            <summary>
+            参考点坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.RefeDPoint">
+            <summary>
+            获取或设置参考点坐标
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_RefeLongitude">
+            <summary>
+            参考点经度  {东经正,西经负: (-180,180]};
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.RefeLongitude">
+            <summary>
+            获取或设置参考点经度
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Coordinate.SECoordinate.m_RefeLatitude">
+            <summary>
+            参考点纬度   {北纬正,南纬负: (-90,90]}
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Coordinate.SECoordinate.RefeLatitude">
+            <summary>
+            获取或设置参考点纬度
+            </summary>
+        </member>
+        <member name="T:SceneElementDll.Scene.Environment.SEEnvironment">
+            <summary>
+            环境类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Environment.SEEnvironment.m_GlobalWeather">
+            <summary>
+            场景中全局天气
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Environment.SEEnvironment.GlobalWeather">
+            <summary>
+            获取或设置场景中全局天气
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Environment.SEEnvironment.m_TimePeriod">
+            <summary>
+            场景中全局时间段
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Environment.SEEnvironment.TimePeriod">
+            <summary>
+            获取或设置场景中全局时间段
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Environment.SEEnvironment.#ctor(SceneElementDll.Basic.EWeatherType,SceneElementDll.Basic.ETimePeriodType)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mGlobalWeather">全局天气</param>
+            <param name="mTimePeriod">全局时间段</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Environment.SEEnvironment.ToString">
+            <summary>
+            重载ToString()函数
+            返回天气和时间段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEEAircraftThreat">
+            <summary>
+            空中飞行器威胁类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_ThreatRadius">
+            <summary>
+            飞行器威胁覆盖半径(km)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.ThreatRadius">
+            <summary>
+            获取或设置飞行器威胁覆盖半径(km)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_StartLocation">
+            <summary>
+            飞行器开始位置
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.StartLocation">
+            <summary>
+            获取或设置飞行器开始位置
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_AircraftTrajectoryType">
+            <summary>
+            飞行器轨迹类型
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.AircraftTrajectoryType">
+            <summary>
+            获取飞行器轨迹类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_CurrentLocation">
+            <summary>
+            飞行器当前位置坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.CurrentLocation">
+            <summary>
+            飞行器体当前位置坐标
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_CurrentDirection">
+            <summary>
+            飞行器当前水平飞行方向
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.CurrentDirection">
+            <summary>
+            飞行器体当前水平飞行方向
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_CurrentDirection_Vertical">
+            <summary>
+            飞行器当前垂直飞行方向
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.CurrentDirection_Vertical">
+            <summary>
+            飞行器体当前垂直飞行方向
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_Velocity">
+            <summary>
+            飞行器水平飞行速度
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.Velocity">
+            <summary>
+            获取或设置飞行器水平飞行速度
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_Velocity_Vertical">
+            <summary>
+            飞行器垂直飞行速度
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.Velocity_Vertical">
+            <summary>
+            获取或设置飞行器垂直飞行速度
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_Direction">
+            <summary>
+            飞行器水平飞行方向(与北向的夹角: (-pi,pi])
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.Direction">
+            <summary>
+            获取或设置飞行器水平飞行方向(与北向的夹角: (-pi,pi])
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_Direction_Vertical">
+            <summary>
+            飞行器垂直飞行方向(与垂直方向的夹角: (-pi,pi])
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.Direction_Vertical">
+            <summary>
+            获取或设置飞行器垂直飞行方向(与垂直方向的夹角: (-pi,pi])
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_LocusCenter">
+            <summary>
+            飞行器运动轨迹圆中心位置(仅限水平飞行, 高度必须与飞行器开始位置高度一致)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.LocusCenter">
+            <summary>
+            获取或设置飞行器运动轨迹圆中心位置(仅限水平飞行, 高度必须与飞行器开始位置高度一致)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_LocusRadius">
+            <summary>
+            飞行器运动轨迹圆半径
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.LocusRadius">
+            <summary>
+            获取飞行器运动轨迹圆半径
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_Angular">
+            <summary>
+            飞行器运动角速度
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.Angular">
+            <summary>
+            获取或设置飞行器运动角速度
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_YawRates">
+            <summary>
+            飞行器偏航速率记录
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.YawRates">
+            <summary>
+            获取飞行器偏航速率记录
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_YawRateInterval">
+            <summary>
+            飞行器偏航速率变化时间间隔
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.YawRateInterval">
+            <summary>
+            获取或设置飞行器偏航速率变化时间间隔
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.m_StartDirection">
+            <summary>
+            飞行器初始水平飞行方向
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.StartDirection">
+            <summary>
+            获取或设置飞行器水平飞行方向
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.#ctor(System.Int32,System.Double,SceneElementDll.Basic.FPoint3,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数 - 构造直线轨迹飞行的飞行器
+            </summary>
+            <param name="iIndex">飞行器编号</param>
+            <param name="fThreatRadius">飞行器飞行器威胁覆盖半径(km)</param>
+            <param name="mStartLocation">飞行器开始位置(km)</param>
+            <param name="fVelocity">飞行器水平飞行速度</param>
+            <param name="fVelocity_Vertical">飞行器垂直飞行速度</param>
+            <param name="fDirection">飞行器水平飞行方向</param>
+            <param name="fDirection_Vertical">飞行器垂直飞行方向</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.#ctor(System.Int32,System.Double,SceneElementDll.Basic.FPoint3,SceneElementDll.Basic.FPoint3,System.Double)">
+            <summary>
+            构造函数 - 构造圆形轨迹飞行的飞行器
+            </summary>
+            <param name="iIndex">飞行器编号</param>
+            <param name="fThreatRadius">飞行器飞行器威胁覆盖半径(km)</param>
+            <param name="mStartLocation">飞行器开始位置(km)</param>
+            <param name="mLocusCenter">飞行器运动轨迹圆中心位置(高度必须与飞行器开始位置高度一致)</param>
+            <param name="mAngular">飞行器角速度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.#ctor(System.Int32,System.Double,SceneElementDll.Basic.FPoint3,System.Double,System.Double)">
+            <summary>
+            构造函数 - 构造随机轨迹飞行的飞行器
+            </summary>
+            <param name="iIndex">飞行器编号</param>
+            <param name="fThreatRadius">飞行器飞行器威胁覆盖半径(km)</param>
+            <param name="mStartLocation">飞行器开始位置(km)</param>
+            <param name="fStartDirection">初始飞行方向(水平方向)</param>
+            <param name="fYawRateInterval">偏航角速率变化时间间隔(设为0时将在[10,100]秒区间内随机取值)</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.UpdateCurrentState(System.Double)">
+            <summary>
+            更新飞行器当前位置
+            </summary>
+            <param name="fTime">飞行时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.UpdateCurrentState_Line(System.Double)">
+            <summary>
+            更新飞行器直线飞行模式下当前位置
+            </summary>
+            <param name="fTime">飞行时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.UpdateCurrentState_Cycle(System.Double)">
+            <summary>
+            更新飞行器圆形飞行模式下当前位置
+            </summary>
+            <param name="fTime">飞行时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.UpdateCurrentState_Random(System.Double)">
+            <summary>
+            更新飞行器随机飞行模式下当前位置(LIUWeiRemark 需要确认)
+            </summary>
+            <param name="fTime">飞行时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.Threaten(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            对考察点的威胁概率
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>威胁概率(0不在边界内，1在边界内) </returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.ToString">
+            <summary>
+            字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEAircraftThreat.Clone">
+            <summary>
+            深度拷贝
+            </summary>
+            <returns>飞行器威胁</returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEEBuildingThreat">
+            <summary>
+            地面建筑威胁类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.m_BuildingDescription">
+            <summary>
+            建筑物描述
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.BuildingDescription">
+            <summary>
+            设置或获取建筑物描述
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.m_VertexsOnGround">
+            <summary>
+            地面角点坐标，至少有3个点 - 顺时针方向
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.VertexsOnGround">
+            <summary>
+            设置或获取地面角点坐标 - 顺时针方向
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.VertexNumber">
+            <summary>
+            设置或获取地面角点数量
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.m_Hight">
+            <summary>
+            建筑高度
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.Hight">
+            <summary>
+            设置或获取建筑高度
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.#ctor(System.Int32,System.String,SceneElementDll.Basic.FPoint3[],System.Double)">
+            <summary>
+            构造函数 - 根据顶点数组构造
+            </summary>
+            <param name="iIndex">建筑物编号</param>
+            <param name="mBuildingDescription">建筑物描述</param>
+            <param name="fVertexs">地面角点数组 - 顺时针方向输入</param>
+            <param name="fHight">建筑高度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.Threaten(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            对考察点的威胁概率
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>威胁概率(0不在建筑物边界内，1在建筑物边界内) </returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.ToString">
+            <summary>
+            格式化显示字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEBuildingThreat.Clone">
+            <summary>
+            深度拷贝
+            </summary>
+            <returns>建筑物</returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEEdgeThreat">
+            <summary>
+            边界威胁类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEdgeThreat.i_Index">
+            <summary>
+            威胁编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEdgeThreat.Index">
+            <summary>
+            获取或设置威胁编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEdgeThreat.m_ModelStyle">
+            <summary>
+            建模方式
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEdgeThreat.ModelStyle">
+            <summary>
+            获取建模方式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEdgeThreat.m_ThreatIsDetected">
+            <summary>
+            威胁是否已被检测到
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEdgeThreat.ThreatIsDetected">
+            <summary>
+            获取或设置威胁是否已被检测到
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEdgeThreat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEdgeThreat.#ctor(System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iIndex">威胁编号</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEdgeThreat.Threaten(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            对考察点的威胁概率
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>0-1威胁概率(0不在边界内，1在边界内) </returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEElevationGrid">
+            <summary>
+            地形类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEElevationGrid.fElevationGrid">
+            <summary>
+            威胁矩阵
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEElevationGrid.nRows">
+            <summary>
+            矩阵行数
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEElevationGrid.nCols">
+            <summary>
+            矩阵列数
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEElevationGrid.m_xLBCorner">
+            <summary>
+            矩阵左下角x坐标(arc degrees) - Geographic(Latitude/longitude)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEElevationGrid.xLBCorner">
+            <summary>
+            获取或设置矩阵左下角x坐标(arc degrees) - Geographic(Latitude/longitude)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEElevationGrid.m_yLBCorner">
+            <summary>
+            矩阵左下角y坐标(arc degrees) - Geographic(Latitude/longitude) 
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEElevationGrid.yLBCorner">
+            <summary>
+            获取或设置矩阵左下角y坐标(arc degrees) - Geographic(Latitude/longitude)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEElevationGrid.m_CellSize">
+            <summary>
+            单元格大小 - (arc degrees)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEElevationGrid.CellSize">
+            <summary>
+            获取或设置单元格大小 - (arc degrees)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEElevationGrid.noDataValue">
+            <summary>
+            非数值点
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEElevationGrid.m_Coordinate">
+            <summary>
+            坐标系
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEElevationGrid.Coordinate">
+            <summary>
+            获取坐标系
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEElevationGrid.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEElevationGrid.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="strElevGridFileName">海拔网格文件名</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEElevationGrid.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double[0:,0:])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="xLBCorner"></param>
+            <param name="yLBCorner"></param>
+            <param name="cellSize"></param>
+            <param name="noDataValue"></param>
+            <param name="fElevationGrid"></param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEElevationGrid.GenerateCoordinate">
+            <summary>
+            生成坐标系
+            </summary>
+            <returns>坐标系</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEElevationGrid.GetAltitudeAt(System.Double,System.Double)">
+            <summary>
+            计算(x,y)处的海拔高度km  四舍五入  若一个点为奇异点 则海拔高度为MaxDouble
+            </summary>
+            <param name="x">x坐标</param>
+            <param name="y">y坐标</param>
+            <returns>海拔高度 km</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEElevationGrid.ParseValue(System.String,System.String)">
+            <summary>
+            解析一行 获取其中数值
+            </summary>
+            <param name="strNR">正则表达式</param>
+            <param name="strLine"></param>
+            <returns>数值</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEElevationGrid.Clone">
+            <summary>
+            深度拷贝
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEEMountainThreat">
+            <summary>
+            山脉威胁类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEMountainThreat.m_BottomRadius">
+            <summary>
+            山脚半径
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEMountainThreat.BottomRadius">
+            <summary>
+            获取或设置山脚半径
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEMountainThreat.m_TopRadius">
+            <summary>
+            山顶半径
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEMountainThreat.TopRadius">
+            <summary>
+            获取或设置山顶半径
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEMountainThreat.m_Hight">
+            <summary>
+            山高
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEMountainThreat.Hight">
+            <summary>
+            获取或设置山高
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEEMountainThreat.m_ThreatCenter">
+            <summary>
+            山体中心坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEEMountainThreat.ThreatCenter">
+            <summary>
+            获取或设置山体中心坐标
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEMountainThreat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEMountainThreat.#ctor(System.Int32,SceneElementDll.Basic.FPoint3,System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iIndex">山体编号</param>
+            <param name="fCenter">山体中心</param>
+            <param name="fBottomRadius">山脚半径</param>
+            <param name="fTopRadius">山顶半径</param>
+            <param name="fHight">高度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEMountainThreat.Threaten(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            判断考察点是否在山体内
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>威胁概率(0不在山体边界内，1在山体边界内)</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEMountainThreat.ToString">
+            <summary>
+            格式化显示字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEMountainThreat.GetRadius(System.Double)">
+            <summary>
+            计算相应高度下的山体半径
+            </summary>
+            <param name="fHight">高度</param>
+            <returns>山体半径</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEMountainThreat.GetHight(System.Double,System.Double)">
+            <summary>
+            计算点的高度
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEEMountainThreat.Clone">
+            <summary>
+            深度拷贝
+            </summary>
+            <returns>山脉</returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEPWindThreat">
+            <summary>
+            风威胁类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPWindThreat.m_Radius">
+            <summary>
+            风区域覆盖半径
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPWindThreat.Radius">
+            <summary>
+            获取或设置风区域覆盖半径
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPWindThreat.m_Velocity">
+            <summary>
+            风速
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPWindThreat.Velocity">
+            <summary>
+            获取或设置风速
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPWindThreat.m_Direction">
+            <summary>
+            风向
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPWindThreat.Direction">
+            <summary>
+            获取或设置风向
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPWindThreat.m_ThreatDegree">
+            <summary>
+            威胁程度
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPWindThreat.ThreatDegree">
+            <summary>
+            获取或设置威胁程度
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPWindThreat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPWindThreat.#ctor(System.Int32,SceneElementDll.Basic.FPoint3,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数 - 根据威胁参数构造
+            </summary>
+            <param name="iIndex">风编号</param>
+            <param name="fCenter">风中心位置</param>
+            <param name="mThreatThreshold">临界威胁概率</param>
+            <param name="fRadius">覆盖半径</param>
+            <param name="fVelocity">风速</param>
+            <param name="fDirection">风向</param>
+            <param name="fThreatDegree">威胁程度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPWindThreat.Threaten(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            对考察点的威胁概率
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>威胁概率</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPWindThreat.GetCriticalThreatRadius(System.Double)">
+            <summary>
+            获取采用概率方式建模的风对特定高度的临界威胁半径
+            </summary>
+            <param name="fHight">考察高度</param>
+            <returns>临界威胁半径</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPWindThreat.ToString">
+            <summary>
+            格式化显示字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPWindThreat.Include(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            是否覆盖考察点
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>(0不在边界内，1在边界内)</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPWindThreat.Clone">
+            <summary>
+            深度拷贝
+            </summary>
+            <returns>风威胁</returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEPMissileThreat">
+            <summary>
+            地空导弹威胁类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPMissileThreat.m_MissileName">
+            <summary>
+            地空导弹型号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPMissileThreat.MissileName">
+            <summary>
+            获取或设置导弹名称
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPMissileThreat.m_MinRadius">
+            <summary>
+            获取或设置最小打击半径
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPMissileThreat.MinRadius">
+            <summary>
+            最小打击半径
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPMissileThreat.m_MaxRadius">
+            <summary>
+            获取或设置最大打击半径
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPMissileThreat.MaxRadius">
+            <summary>
+            最大打击半径
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPMissileThreat.m_MaxHight">
+            <summary>
+            获取或设置最大打击高度
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPMissileThreat.MaxHight">
+            <summary>
+            最大打击高度
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPMissileThreat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPMissileThreat.#ctor(System.Int32,SceneElementDll.Basic.FPoint3,System.Double,System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数 - 根据威胁参数构造
+            </summary>
+            <param name="iIndex">地空导弹编号</param>
+            <param name="fCenter">地空导弹位置</param>
+            <param name="mThreatThreshold">临界威胁概率</param>
+            <param name="mMissileName">地空导弹型号</param>
+            <param name="fMinRadius">最小打击半径</param>
+            <param name="fMaxRadius">最大打击半径</param>
+            <param name="fMaxHight">最大打击高度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPMissileThreat.Threaten(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            对考察点的威胁概率
+            </summary>
+            <param name="point">考察点</param>
+            <returns>威胁概率 </returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPMissileThreat.GetCriticalThreatRadius(System.Double)">
+            <summary>
+             获取采用概率方式建模的导弹对特定高度的临界威胁半径
+            </summary>
+            <param name="fHight">考察高度</param>
+            <returns>临界威胁半径 </returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPMissileThreat.ToString">
+            <summary>
+            格式化显示字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPMissileThreat.GetRadius(System.Double)">
+            <summary>
+            对某高度的有效打击半径
+            </summary>
+            <param name="hight">考察高度</param>
+            <returns>打击半径 </returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPMissileThreat.Clone">
+            <summary>
+            深度拷贝
+            </summary>
+            <returns>地空导弹</returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEPRadarThreat">
+            <summary>
+            雷达威胁类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPRadarThreat.m_RadarName">
+            <summary>
+            雷达型号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPRadarThreat.RadarName">
+            <summary>
+            获取或设置雷达型号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPRadarThreat.m_ThreatDegree">
+            <summary>
+            获取或设置威胁强度
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPRadarThreat.ThreatDegree">
+            <summary>
+            威胁强度
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPRadarThreat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPRadarThreat.#ctor(System.Int32,SceneElementDll.Basic.FPoint3,System.Double,System.String,System.Double)">
+            <summary>
+            构造函数 - 根据威胁参数构造
+            </summary>
+            <param name="iIndex">雷达编号</param>
+            <param name="fCenter">雷达位置</param>
+            <param name="mThreatThreshold">临界威胁概率</param>
+            <param name="mRadarName">雷达型号</param>
+            <param name="mThreatDegree">雷达威胁强度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPRadarThreat.Threaten(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            雷达任意点的威胁概率
+            </summary>
+            <param name="point">考察点</param>
+            <returns>威胁概率 </returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPRadarThreat.GetCriticalThreatRadius(System.Double)">
+            <summary>
+            获取采用概率方式建模的雷达对特定高度的临界威胁半径
+            </summary>
+            <param name="fHight">考察高度</param>
+            <returns>临界威胁半径 </returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPRadarThreat.ToString">
+            <summary>
+            格式化显示字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPRadarThreat.Clone">
+            <summary>
+            深度拷贝
+            </summary>
+            <returns>雷达威胁</returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEProbThreat">
+            <summary>
+            概率威胁基类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEProbThreat.i_Index">
+            <summary>
+            威胁编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEProbThreat.Index">
+            <summary>
+            获取或设置威胁编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEProbThreat.m_ModelStyle">
+            <summary>
+            建模方式
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEProbThreat.ModelStyle">
+            <summary>
+            获取建模方式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEProbThreat.m_ThreatCenter">
+            <summary>
+            威胁中心坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEProbThreat.ThreatCenter">
+            <summary>
+            获取或设置威胁中心坐标
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEProbThreat.m_ThreatIsDetected">
+            <summary>
+            威胁是否已被检测到
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEProbThreat.ThreatIsDetected">
+            <summary>
+            获取或设置威胁是否已被检测到
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEProbThreat.m_ThreatThreshold">
+            <summary>
+            临界威胁概率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEProbThreat.ThreatThreshold">
+            <summary>
+            获取或设置临界威胁概率
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEProbThreat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEProbThreat.#ctor(System.Int32,SceneElementDll.Basic.FPoint3,System.Double)">
+            <summary>
+            构造函数 - 根据顶点数组构造
+            </summary>
+            <param name="iIndex">威胁编号</param>
+            <param name="fCenter">威胁中心</param>
+            <param name="mThreatThreshold">临界威胁概率</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEProbThreat.Threaten(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            对考察点的威胁概率
+            </summary>
+            <param name="point">考察点</param>
+            <returns>威胁概率 </returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEProbThreat.GetCriticalThreatRadius(System.Double)">
+            <summary>
+            获取采用概率方式建模的威胁体的特定高度的临界威胁半径(包括雷达/地空导弹/恶劣气候/风)
+            </summary>
+            <param name="fHight">考察高度</param>
+            <returns>临界威胁半径</returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat">
+            <summary>
+            恶劣气候类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.m_Radius">
+            <summary>
+            覆盖半径
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.Radius">
+            <summary>
+            获取或设置覆盖半径
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.m_Weather">
+            <summary>
+            区域内的天气状况
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.Weather">
+            <summary>
+            获取区域内的天气状况
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.m_TimePeriod">
+            <summary>
+            区域中的时间段信息
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.TimePeriod">
+            <summary>
+            获取或设置区域中的时间段信息
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.m_ThreatDegree">
+            <summary>
+            威胁程度
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.ThreatDegree">
+            <summary>
+            获取或设置威胁程度
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.#ctor(System.Int32,SceneElementDll.Basic.FPoint3,System.Double,System.Double,SceneElementDll.Basic.EWeatherType,SceneElementDll.Basic.ETimePeriodType,System.Double)">
+            <summary>
+            构造函数 - 根据威胁参数构造
+            </summary>
+            <param name="iIndex">风编号</param>
+            <param name="fCenter">风中心位置</param>
+            <param name="mThreatThreshold">临界威胁概率</param>
+            <param name="fRadius">覆盖半径</param>
+            <param name="mWeather">气候</param>
+            <param name="mTimePeriod">环境</param>
+            <param name="fThreatDegree">威胁程度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.Threaten(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            对考察点的威胁概率
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>威胁概率</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.GetCriticalThreatRadius(System.Double)">
+            <summary>
+             获取采用概率方式建模的恶劣气候对特定高度的临界威胁半径
+            </summary>
+            <param name="fHight">考察高度</param>
+            <returns>临界威胁半径</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.ToString">
+            <summary>
+            格式化显示字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.Include(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            是否覆盖考察点
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>(0不在边界内，1在边界内)</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat.Clone">
+            <summary>
+            深度拷贝
+            </summary>
+            <returns>恶劣气候</returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEThreatMetrix">
+            <summary>
+            威胁矩阵类
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreatMetrix.#ctor(SceneElementDll.PScenario,System.Int32,System.Int32,System.Double)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="scenario">场景</param>
+            <param name="mX">x轴采样数量</param>
+            <param name="mY">y轴采样数量</param>
+            <param name="altitude">规划高度</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreatMetrix.isVaildPoint(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            判断某一点是否安全
+            </summary>
+            <param name="pos">点坐标</param>
+            <returns>安全为true</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreatMetrix.toReal(System.Int32,System.Int32,SceneElementDll.Basic.FPoint3@)">
+            <summary>
+            从威胁矩阵映射到场景坐标
+            </summary>
+            <param name="i">威胁矩阵x</param>
+            <param name="j">威胁矩阵y</param>
+            <param name="pos">场景坐标</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreatMetrix.toVirtual(SceneElementDll.Basic.FPoint3,System.Int32@,System.Int32@)">
+            <summary>
+            从场景坐标映射到威胁矩阵
+            </summary>
+            <param name="pos">场景坐标</param>
+            <param name="i">威胁矩阵</param>
+            <param name="j">威胁矩阵</param>
+        </member>
+        <member name="T:SceneElementDll.Scene.Obstacle.SEThreats">
+            <summary>
+            基本场景类 - 场景中威胁对象定义
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEThreats.m_RadarThreats">
+            <summary>
+            地面雷达威胁对象组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEThreats.RadarThreats">
+            <summary>
+            获取或设置地面雷达威胁对象组
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEThreats.m_MissileThreats">
+            <summary>
+            地空导弹威胁对象组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEThreats.MissileThreats">
+            <summary>
+            获取或设置地空导弹威胁对象组
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEThreats.m_WeatherThreats">
+            <summary>
+            恶劣气候威胁对象组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEThreats.WeatherThreats">
+            <summary>
+            获取或设置恶劣气候威胁对象组
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEThreats.m_WindThreats">
+            <summary>
+            风威胁对象组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEThreats.WindThreats">
+            <summary>
+            获取或设置风威胁对象组
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEThreats.m_BuildingThreats">
+            <summary>
+            建筑物威胁对象组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEThreats.BuildingThreats">
+            <summary>
+            获取或设置建筑物威胁对象组
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEThreats.m_MountainThreats">
+            <summary>
+            山脉威胁对象组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEThreats.MountainThreats">
+            <summary>
+            获取或设置山脉威胁对象组
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEThreats.m_AircraftThreats">
+            <summary>
+            其他飞行器威胁对象组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEThreats.AircraftThreats">
+            <summary>
+            获取或设置其他飞行器威胁对象组
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEThreats.m_ThreatsMaxtrix">
+            <summary>
+            威胁矩阵
+            </summary>        
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEThreats.ThreatsMaxtrix">
+            <summary>
+            获取或设置威胁矩阵
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.Obstacle.SEThreats.m_ElevationGrid">
+            <summary>
+            以经纬度为基准的高程网格
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.Obstacle.SEThreats.ElevationGrid">
+            <summary>
+            获取或设置高程网格
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.#ctor">
+            <summary>
+            构造函数 
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.#ctor(SceneElementDll.Scene.Obstacle.SEPRadarThreat[],SceneElementDll.Scene.Obstacle.SEPMissileThreat[],SceneElementDll.Scene.Obstacle.SEPAtrociousWeatherThreat[],SceneElementDll.Scene.Obstacle.SEPWindThreat[],SceneElementDll.Scene.Obstacle.SEEBuildingThreat[],SceneElementDll.Scene.Obstacle.SEEMountainThreat[],SceneElementDll.Scene.Obstacle.SEEAircraftThreat[])">
+            <summary>
+            构造函数 - 设置威胁对象, 若不存在某类威胁则输入null
+            </summary>
+            <param name="mRadarThreats">地面雷达威胁对象组</param>
+            <param name="mMissileThreats">地空导弹威胁对象组</param>
+            <param name="mWeatherThreats">恶劣气候威胁对象组</param>
+            <param name="mWindThreats">风威胁对象组</param>
+            <param name="mBuildingThreats">建筑物威胁对象组</param>
+            <param name="mMountainThreats">山脉威胁对象组</param>
+            <param name="mAircraftThreats">其他飞行器威胁对象组</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.IsNull">
+            <summary>
+            场景中是否含有威胁对象
+            </summary>
+            <returns>true:不含有，false:含有</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.ClearAll">
+            <summary>
+            清空场景中所有威胁对象
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.GetAltitude(System.Double,System.Double)">
+            <summary>
+            获取目标点的海拔高度
+            </summary>
+            <param name="x">X坐标</param>
+            <param name="y">Y坐标</param>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.ThreatRiskFromAll(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            根据场景中所有威胁体计算场景中考察点的威胁值: [0,1]
+            </summary>
+            <param name="fPoint3">考察点</param>
+            <returns>威胁概率</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.ThreatRiskFromDetected(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            根据场景中已探测到的威胁体计算场景中考察点的威胁值: [0,1]
+            </summary>
+            <param name="fPoint3">考察点</param>
+            <returns>威胁概率</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.IsValidPointForAll(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            根据场景中所有的威胁体计算场景中的考察点是否合法
+            </summary>
+            <param name="fPoint3">考察点</param>
+            <returns>true:合法;false:不合法</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.IsValidPointForDetected(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            根据场景中已探测到的威胁体计算场景中考察点是否合法
+            </summary>
+            <param name="fPoint3">考察点</param>
+            <returns>合法</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.InitDetectedThreat">
+            <summary>
+            初始化场景中所有威胁为未知状态
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.InitDetectedThreat(System.Byte)">
+            <summary>
+            初始化场景中所有威胁为指定状态
+            <param name="isDetected">是否已探测到: 0-未探测到, 1-已探测到</param>
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.UpdateDetectedThreat(SceneElementDll.Basic.FPoint3,System.Double)">
+            <summary>
+            更新场景中的已知威胁
+            </summary>
+            <param name="fPoint">无人机位置</param>
+            <param name="fDistance">无人机探测距离</param>
+            <returns>是否更新</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.Obstacle.SEThreats.Clone">
+            <summary>
+            深拷贝
+            </summary>
+            <returns>SEThreats类</returns>
+        </member>
+        <member name="T:SceneElementDll.Scene.SEScene">
+            <summary>
+            基本场景类 - 场景所采用的坐标系
+            </summary>
+            <summary>
+            基本场景类
+            </summary>
+            <summary>
+            场景支持的任务类型和算法
+            </summary>
+            <summary>
+            基本场景类 - 场景中威胁对象定义
+            </summary>
+            <summary>
+            任务环境
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.SEScene.m_Coordinate">
+            <summary>
+            坐标系
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.SEScene.Coordinate">
+            <summary>
+            获取或设置坐标系
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.IsValidCoordinate">
+            <summary>
+            坐标系是否有效(是否已经赋值)
+            </summary>
+            <returns>true:有效，false:无效</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.PointToSafeCoordinateIndex(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            将点安全转换为整数形式的距离坐标系坐标索引, 同时防止点超出坐标范围
+            </summary>
+            <param name="fPoint">点</param>
+            <returns>0:X坐标; 1:Y坐标; 2:Z坐标 </returns>
+        </member>
+        <member name="F:SceneElementDll.Scene.SEScene.m_SceneIndex">
+            <summary>
+            场景编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.SEScene.SceneIndex">
+            <summary>
+            获取或设置场景编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.SEScene.m_SceneName">
+            <summary>
+            场景名称
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.SEScene.SceneName">
+            <summary>
+            获取或设置场景名称
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.Scene.SEScene.m_SceneDescription">
+            <summary>
+            场景描述
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.SEScene.SceneDescription">
+            <summary>
+            获取或设置场景描述
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.#ctor">
+            <summary>
+            构造函数 - 需手动创建坐标系/环境/威胁等
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.#ctor(SceneElementDll.Scene.Coordinate.SECoordinate,SceneElementDll.Scene.Environment.SEEnvironment,SceneElementDll.Scene.Obstacle.SEThreats,System.Collections.Generic.List{SceneElementDll.Mission.SEMissionType})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mCoordinate">任务空间坐标系</param>
+            <param name="mEnvironment">飞行环境</param>
+            <param name="mThreats">威胁对象</param>
+            <param name="mMissionTypes">支持的任务类型列表(一般设为null)</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.SetCoordinate(SceneElementDll.Scene.Coordinate.SECoordinate)">
+            <summary>
+            设置坐标系
+            </summary>
+            <param name="mCoordinate">任务空间坐标系</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.SetEnvironment(SceneElementDll.Scene.Environment.SEEnvironment)">
+            <summary>
+            设置环境
+            </summary>
+            <param name="mEnvironment">飞行环境</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.SetObstacles(SceneElementDll.Scene.Obstacle.SEThreats)">
+            <summary>
+            设置威胁对象
+            </summary>
+            <param name="mThreats">威胁对象</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.SetSupportedMIssionType(System.Collections.Generic.List{SceneElementDll.Mission.SEMissionType})">
+            <summary>
+            设置支持的任务类型列表
+            </summary>
+            <param name="mMissionTypes">任务类型列表列表</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.InitializeAll">
+            <summary>
+            初始化场景中所有对象为默认值(慎用)
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:SceneElementDll.Scene.SEScene.m_SupportedMissionTypes">
+            <summary>
+            支持的任务类型
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.SEScene.SupportedMissionTypes">
+            <summary>
+            获取支持的任务类型
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.ParseSupportMissionType(System.String)">
+            <summary>
+            解析场景支持的任务类型
+            </summary>
+            <param name="strMissionType">支持任务类型字符串</param>
+            <returns>支持任务类型列表</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.ConvertSupportMissionType2String(System.Collections.Generic.List{SceneElementDll.Basic.EFlightMissionType})">
+            <summary>
+            转化场景支持任务类型到字符串
+            </summary>
+            <param name="eFlightMissionType">支持任务类型</param>
+            <returns>支持任务类型列表</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.AddSupportedMissionType(SceneElementDll.Basic.EFlightMissionType)">
+            <summary>
+            设置场景支持的任务
+            </summary>
+            <param name="mEMissionType">任务类型</param>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.AddSupportedMissionType(SceneElementDll.Mission.SEMissionType)">
+            <summary>
+            设置场景支持的任务
+            </summary>
+            <param name="mMissionType">任务类型</param>
+        </member>
+        <member name="F:SceneElementDll.Scene.SEScene.m_Threats">
+            <summary>
+            威胁对象组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.SEScene.Threats">
+            <summary>
+            获取或设置地面雷达威胁对象组
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.IsValidThreats">
+            <summary>
+            场景中是否含有威胁对象
+            </summary>
+            <returns>true:不含有，false:含有</returns>
+        </member>
+        <member name="F:SceneElementDll.Scene.SEScene.m_Environment">
+            <summary>
+            环境
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.Scene.SEScene.Environment">
+            <summary>
+            获取或设置环境
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.IsValidEnvironment">
+            <summary>
+            环境是否有效(是否已经赋值)
+            </summary>
+            <returns>true:有效，false:无效</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.GetTargetWeather(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            获取考察点的天气信息
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>天气信息</returns>
+        </member>
+        <member name="M:SceneElementDll.Scene.SEScene.GetTargetTimePeriod(SceneElementDll.Basic.FPoint3)">
+            <summary>
+            获取考察点的时间段信息
+            </summary>
+            <param name="fPoint">考察点</param>
+            <returns>时间段信息</returns>
+        </member>
+        <member name="T:SceneElementDll.PScenario">
+            <summary>
+            仿真任务定义类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_Index">
+            <summary>
+            仿真任务编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.Index">
+            <summary>
+            获取或设置仿真任务编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_Name">
+            <summary>
+            仿真任务名称
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.Name">
+            <summary>
+            获取或设置仿真任务名称
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_FlightMission">
+            <summary>
+            协同飞行任务
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.FlightMission">
+            <summary>
+            获取或设置协同飞行任务
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_State">
+            <summary>
+            仿真任务状态
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.State">
+            <summary>
+            获取或设置仿真任务状态
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_FlightScene">
+            <summary>
+            场景
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.FlightScene">
+            <summary>
+            获取或设置场景
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_UAVGroup">
+            <summary>
+            无人机组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.UAVGroup">
+            <summary>
+            获取或设置无人机组
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_MissionExecutionMode">
+            <summary>
+            飞行任务执行类型
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.MissionExecutionMode">
+            <summary>
+            获取或设置飞行任务执行类型
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_AssignmentMode">
+            <summary>
+            任务分配计算模式
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.AssignmentMode">
+            <summary>
+            获取或设置任务分配计算模式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_PathPlanningMode">
+            <summary>
+            航迹规划计算模式
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.PathPlanningMode">
+            <summary>
+            获取或设置航迹规划计算模式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_AssignmentMethod">
+            <summary>
+            任务分配算法
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.AssignmentMethod">
+            <summary>
+            获取或设置任务分配算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_PathPlanningMethod">
+            <summary>
+            航迹规划算法
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.PathPlanningMethod">
+            <summary>
+            获取或设置航迹规划算法
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_NeedPrePathPlanning">
+            <summary>
+            任务分配前是否执行航迹预规划
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.NeedPrePathPlanning">
+            <summary>
+            获取或设置任务分配前是否执行航迹预规划
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_NeedGoBackToStartState">
+            <summary>
+            航迹规划时确定无人机是否返航
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.NeedGoBackToStartState">
+            <summary>
+            获取或设置航迹规划时确定无人机是否返航
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_NeedTimeControl">
+            <summary>
+            航迹规划后是否需要无人机协同搜索时间控制//张建涛
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.NeedTimeControl">
+            <summary>
+            获取或设置航迹规划后是否需要无人机协同搜索时间控制
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_NeedShareInformation">
+            <summary>
+            分布式模式下是否需要共享信息
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.NeedShareInformation">
+            <summary>
+            获取或设置分布式模式下是否需要共享信息
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_SimStep">
+            <summary>
+            仿真步长
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.SimStep">
+            <summary>
+            获取或设置仿真步长
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_SimStartTime">
+            <summary>
+            仿真开始时间
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.SimStartTime">
+            <summary>
+            获取或设置仿真开始时间
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_SimEndTime">
+            <summary>
+            仿真结束时间
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.SimEndTime">
+            <summary>
+            获取或设置仿真结束时间
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_SimPauseTime">
+            <summary>
+            仿真暂停时间
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.SimPauseTime">
+            <summary>
+            获取或设置仿真暂停时间
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_SimContinueTime">
+            <summary>
+            仿真继续时间
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.SimContinueTime">
+            <summary>
+            获取或设置仿真继续时间
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_SimPauseDescription">
+            <summary>
+            仿真暂停描述
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.SimPauseDescription">
+            <summary>
+            获取或设置仿真暂停描述
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.PScenario.m_AddedLocalTargets">
+            <summary>
+            是否已经添加了本地目标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.PScenario.AddedLocalTargets">
+            <summary>
+            获取或设置
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.PScenario.#ctor(System.UInt64)">
+            <summary>
+            构造函数, 仿真任务项需手动设定
+            </summary>
+            <param name="index">仿真索引</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.#ctor(System.UInt64,SceneElementDll.Mission.SEMission,SceneElementDll.Scene.SEScene,SceneElementDll.UAV.SEUAVGroup,SceneElementDll.Basic.EMissionExecutionMode,SceneElementDll.Basic.EAssignmentMode,SceneElementDll.Basic.EPathPlanningMode,SceneElementDll.Method.SEMissionAssignmentMethod,SceneElementDll.Method.SEPathPlanningMethod)">
+            <summary>
+            构造函数, 所有项均不能为null
+            </summary>
+            <param name="index">仿真索引</param>
+            <param name="mFlightMission">飞行任务</param>
+            <param name="mFlightScene">飞行场景</param>
+            <param name="mUAVGroup">无人机组</param>
+            <param name="mMissionExecutionMode">飞行任务执行类型</param>
+            <param name="mAssignmentMode">任务分配计算模式</param>
+            <param name="mPathPlanningMode">航迹规划计算模式</param>
+            <param name="mMissionAssignmentMethod">任务分配算法</param>
+            <param name="mPathPlanningMethod">航迹规划算法</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.SetScenario(System.UInt64,SceneElementDll.Mission.SEMission,SceneElementDll.Scene.SEScene,SceneElementDll.UAV.SEUAVGroup,SceneElementDll.Basic.EMissionExecutionMode,SceneElementDll.Basic.EAssignmentMode,SceneElementDll.Basic.EPathPlanningMode,SceneElementDll.Method.SEMissionAssignmentMethod,SceneElementDll.Method.SEPathPlanningMethod)">
+            <summary>
+            设置仿真任务, 如果不设置某项则输入null
+            </summary>
+            <param name="index">仿真索引</param>
+            <param name="mFlightMission">飞行任务</param>
+            <param name="mFlightScene">飞行场景</param>
+            <param name="mUAVGroup">无人机组</param>
+            <param name="mMissionExecutionMode">飞行任务执行类型</param>
+            <param name="mAssignmentMode">任务分配计算模式</param>
+            <param name="mPathPlanningMode">航迹规划计算模式</param>
+            <param name="mMissionAssignmentMethod">任务分配算法</param>
+            <param name="mPathPlanningMethod">航迹规划算法</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.SetMission(SceneElementDll.Mission.SEMission)">
+            <summary>
+            设置飞行任务
+            </summary>
+            <param name="mFlightMission">飞行任务</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.SetScene(SceneElementDll.Scene.SEScene)">
+            <summary>
+            设置飞行场景
+            </summary>
+            <param name="mFlightScene">飞行场景</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.SetUAVGroup(SceneElementDll.UAV.SEUAVGroup)">
+            <summary>
+            设置无人机组
+            </summary>
+            <param name="mUAVGroup">无人机组</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.SetMissionExecutionMode(SceneElementDll.Basic.EMissionExecutionMode)">
+            <summary>
+            设置飞行任务执行类型
+            </summary>
+            <param name="mMissionExecutionMode">飞行任务执行类型</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.SetAssignmentMode(SceneElementDll.Basic.EAssignmentMode)">
+            <summary>
+            设置任务分配计算模式
+            </summary>
+            <param name="mAssignmentMode">任务分配计算模式</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.SetPathPlanningMode(SceneElementDll.Basic.EPathPlanningMode)">
+            <summary>
+            设置航迹规划计算模式
+            </summary>
+            <param name="mPathPlanningMode">航迹规划计算模式</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.SetMissionAssignmentMethod(SceneElementDll.Method.SEMissionAssignmentMethod)">
+            <summary>
+            设置任务分配算法
+            </summary>
+            <param name="mMissionAssignmentMethod">任务分配算法</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.SetPathPlanningMethod(SceneElementDll.Method.SEPathPlanningMethod)">
+            <summary>
+            设置航迹规划算法
+            </summary>
+            <param name="mPathPlanningMethod">航迹规划算法</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.Clone(SceneElementDll.PScenario)">
+            <summary>
+            将场景1的信息复制到场景2（深度拷贝）
+            </summary>
+            <param name="Scenario1">源场景</param>
+        </member>
+        <member name="M:SceneElementDll.PScenario.Clone(SceneElementDll.PScenario,SceneElementDll.PScenario)">
+            <summary>
+            拷贝（用同一引用,不是深度拷贝）
+            </summary>
+            <param name="Scenario1">源场景</param>
+            <param name="Scenario2">目标场景</param>        
+        </member>
+        <member name="M:SceneElementDll.PScenario.AddLocalTargets(SceneElementDll.PScenario)">
+            <summary>
+            为目标场景添加本地目标
+            </summary>
+            <param name="mScenario">目标场景</param>
+        </member>
+        <member name="T:SceneElementDll.UAV.SEUAV">
+            <summary>
+            基本无人机对象类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.uavIndex">
+            <summary>
+            无人机编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.UAVIndex">
+            <summary>
+            获取或设置无人机编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.uavName">
+            <summary>
+            无人机名称
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.UAVName">
+            <summary>
+            获取或设置无人机名称
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.uavType">
+            <summary>
+            无人机型号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.UAVType">
+            <summary>
+            获取或设置无人机型号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.minFlightVelocity">
+            <summary>
+            无人机最小飞行速率(UAV's mininimal flight velocity, km/s)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.MinFlightVelocity">
+            <summary>
+            获取或设置无人机最小飞行速率(UAV's mininimal flight velocity, km/s)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.maxFlightVelocity">
+            <summary>
+            无人机最大飞行速率(UAV's maximal flight velocity, km/s)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.MaxFlightVelocity">
+            <summary>
+            获取或设置无人机最大飞行速率(UAV's maximal flight velocity, km/s)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.minflightAltitude">
+            <summary>
+            无人机最小飞行高度(UAV's mininimal flight altitude)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.MinFlightAltitude">
+            <summary>
+            获取或设置无人机最小飞行高度(UAV's mininimal flight altitude)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.maxflightAltitude">
+            <summary>
+            无人机最大飞行高度(UAV's maximal flight altitude)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.MaxFlightAltitude">
+            <summary>
+            获取或设置无人机最大飞行高度(UAV's maximal flight altitude)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.fuelTotalQuantity">
+            <summary>
+            无人机携带燃油量
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.FuelTotalQuantity">
+            <summary>
+            获取或设置无人机携带燃油量
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.fuelConsumedPower">
+            <summary>
+            无人机燃油消耗率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.FuelConsumedPower">
+            <summary>
+            获取或设置无人机燃油消耗率
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.carryingCapacity">
+            <summary>
+            无人机最大载重量(kg)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.CarryingCapacity">
+            <summary>
+            获取或设置无人机最大载重量(kg)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.totalFlightTime">
+            <summary>
+            无人机最大续航时间(s)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.TotalFlightTime">
+            <summary>
+            获取或设置无人机最大续航时间(s)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.cost">
+            <summary>
+            无人机自身造价
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.Cost">
+            <summary>
+            获取或设置无人机自身造价
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.defenseCapability">
+            <summary>
+            无人机防御能力
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.DefenseCapability">
+            <summary>
+            获取或设置无人机防御能力
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.maxYawRate">
+            <summary>
+            无人机最大偏航角速率(UAV's maximum yaw rate, constant)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.MaxYawRate">
+            <summary>
+            获取或设置无人机最大偏航角速率(UAV's maximum yaw rate, constant)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.maxRollingRate">
+            <summary>
+            无人机最大滚转角速率(UAV's maximum yaw rate, constant)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.MaxRollingRate">
+            <summary>
+            获取或设置无人机最大滚转角速率(UAV's maximum yaw rate, constant)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.maxPitchRate">
+            <summary>
+            无人机最大俯仰角速率(UAV's maximum yaw rate, constant)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.MaxPitchRate">
+            <summary>
+            获取或设置无人机最大俯仰角速率(UAV's maximum yaw rate, constant)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.maxCommumicationRadius">
+            <summary>
+            无人机最大通信距离
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.MaxCommumicationRadius">
+            <summary>
+            获取或设置无人机最大通信距离
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.m_HittingMode">
+            <summary>
+            无人机攻击模式
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.HittingMode">
+            <summary>
+            获取或设置无人机攻击模式
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.weapon">
+            <summary>
+            无人机携带的武器
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.Weapon">
+            <summary>
+            获取或设置无人机携带的武器
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.threatSensor">
+            <summary>
+            无人机携带的威胁探测传感器
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.ThreatSensor">
+            <summary>
+            获取或设置无人机携带的威胁探测传感器
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.imageSensor">
+            <summary>
+            无人机携带的图像探测传感器
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.ImageSensor">
+            <summary>
+            获取或设置无人机携带的图像探测传感器
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.m_StartState">
+            <summary>
+            无人机起始状态
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.StartState">
+            <summary>
+            无人机起始状态
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAV.m_TargetState">
+            <summary>
+            无人机目标状态(备用)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAV.TargetState">
+            <summary>
+            无人机目标点状态(备用)
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAV.#ctor">
+            <summary>
+            构造函数 - 必须进一步对属性赋值
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAV.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.UAV.SEUAVGroup">
+            <summary>
+            无人机组类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVGroup.m_UAVGroupIndex">
+            <summary>
+            无人机组编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVGroup.UAVGroupIndex">
+            <summary>
+            获取或设置无人机组编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVGroup.m_UAVs">
+            <summary>
+            无人机组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVGroup.UAVs">
+            <summary>
+            获取或设置无人机组
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVGroup.UAVNumber">
+            <summary>
+            获取或设置无人机组包含的无人机数量
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVGroup.m_UAVGroupDescription">
+            <summary>
+            无人机组描述
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVGroup.UAVGroupDescription">
+            <summary>
+            获取或设置无人机组描述
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVGroup.m_SupportedMissionTypes">
+            <summary>
+            支持任务类型
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVGroup.SupportedMissionTypes">
+            <summary>
+            获取或设置任务类型
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVGroup.#ctor">
+            <summary>
+            构造函数 - 必须进一步对属性赋值
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVGroup.#ctor(System.Int32,SceneElementDll.UAV.SEUAV[])">
+            <summary>
+             构造函数
+            </summary>
+            <param name="mUAVGroupIndex">无人机组编号</param>
+            <param name="mUAVs">无人机</param>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVGroup.SetUAVs(SceneElementDll.UAV.SEUAV[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mUAVs">无人机组</param>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVGroup.GetUAV(System.Int32)">
+            <summary>
+            根据无人机编号获取无人机对象
+            </summary>
+            <param name="iUAVIndex">无人机编号</param>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVGroup.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.UAV.SEUAVState">
+            <summary>
+            无人机状态类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVState.m_PointLocation">
+            <summary>
+            飞行点坐标
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVState.PointLocation">
+            <summary>
+            获取或设置飞行点坐标
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVState.m_FlightDirection">
+            <summary>
+            水平飞行方向(到北向的夹角)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVState.FlightDirection">
+            <summary>
+            获取或设置水平飞行方向(到北向的夹角)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVState.m_FlightDirection_Vertical">
+            <summary>
+            垂直飞行方向(到垂直方向的夹角)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVState.FlightDirection_Vertical">
+            <summary>
+            获取或设置垂直飞行方向(到垂直方向的夹角)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVState.m_FlightVelocity">
+            <summary>
+            水平飞行速率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVState.FlightVelocity">
+            <summary>
+            获取或设置水平飞行速率
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVState.m_FlightVelocity_Vertical">
+            <summary>
+            垂直飞行速率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVState.FlightVelocity_Vertical">
+            <summary>
+            获取或设置垂直飞行速率
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVState.m_SpecifiedTime">
+            <summary>
+            到达该点的时间
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVState.SpecifiedTime">
+            <summary>
+            获取或设置到达该点的时间
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVState.m_YawRate">
+            <summary>
+            偏航角速率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVState.YawRate">
+            <summary>
+            获取或设置偏航角速率
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVState.m_RollingRate">
+            <summary>
+            滚转角速率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVState.RollingRate">
+            <summary>
+            获取或设置滚转角速率
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVState.m_PitchRate">
+            <summary>
+            俯仰角速率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVState.PitchRate">
+            <summary>
+            获取或设置俯仰角速率
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVState.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVState.#ctor(SceneElementDll.Basic.FPoint3,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数 - 没有值的项赋值为null或者0
+            </summary>
+            <param name="mPointLocation">飞行点坐标</param>
+            <param name="mFlightDirection">水平飞行方向</param>
+            <param name="mFlightDirection_Vertical">垂直飞行方向(2D中为0)</param>
+            <param name="mFlightVelocity">水平飞行速率</param>
+            <param name="mSpecifiedTime">到达该点的时间(针对特定任务)</param>
+            <param name="mYawRate">偏航角速率</param>
+            <param name="mRollingRate">滚转角速率</param>
+            <param name="mPitchRate">俯仰角速率</param>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVState.#ctor(SceneElementDll.Basic.FPoint3,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            构造函数 - 没有值的项赋值为null或者0
+            </summary>
+            <param name="mPointLocation">飞行点坐标</param>
+            <param name="mFlightDirection">水平飞行方向</param>
+            <param name="mFlightDirection_Vertical">垂直飞行方向(2D中为0)</param>
+            <param name="mFlightVelocity">水平飞行速率</param>
+            <param name="mFlightVelocity_Vertical">垂直飞行速率</param>
+            <param name="mSpecifiedTime">到达该点的时间(针对特定任务)</param>
+            <param name="mYawRate">偏航角速率</param>
+            <param name="mRollingRate">滚转角速率</param>
+            <param name="mPitchRate">俯仰角速率</param>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVState.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVState.Clone">
+            <summary>
+            创建无人机状态副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.UAV.SEUAVThreatSensor">
+            <summary>
+            威胁探测传感器定义类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVThreatSensor.threatSensorIndex">
+            <summary>
+            威胁探测传感器编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVThreatSensor.ThreatSensorIndex">
+            <summary>
+            获取或设置威胁探测传感器编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVThreatSensor.threatSensorType">
+            <summary>
+            威胁探测传感器型号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVThreatSensor.ThreatSensorType">
+            <summary>
+            获取或设置威胁探测传感器型号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVThreatSensor.threatSensorRange">
+            <summary>
+            威胁探测传感器探测距离
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVThreatSensor.ThreatSensorRange">
+            <summary>
+            获取或设置威胁探测传感器探测距离
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVThreatSensor.threatResolvingPower">
+            <summary>
+            威胁探测传感器分辨率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVThreatSensor.ThreatResolvingPower">
+            <summary>
+            获取或设置威胁探测传感器分辨率
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVThreatSensor.#ctor">
+            <summary>
+            构造函数(空)
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVThreatSensor.#ctor(System.Int32,System.String,System.Double,System.Double)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iThreatSensorIndex">威胁探测传感器编号</param>
+            <param name="sThreatSensorType">威胁探测传感器型号</param>
+            <param name="fThreatSensorRange">威胁探测传感器探测距离</param>
+            <param name="fThreatResolvingPower">威胁探测传感器分辨率</param>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVThreatSensor.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.UAV.SEUAVWeapon">
+            <summary>
+            武器类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVWeapon.weaponIndex">
+            <summary>
+            武器编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVWeapon.WeaponIndex">
+            <summary>
+            获取或设置武器编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVWeapon.weaponType">
+            <summary>
+            武器型号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVWeapon.WeaponType">
+            <summary>
+            获取或设置武器型号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVWeapon.weaponCost">
+            <summary>
+            武器价值
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVWeapon.WeaponCost">
+            <summary>
+            获取或设置武器价值
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVWeapon.weaponCapability">
+            <summary>
+            武器不同阶段(不同攻击模式)下攻击能力
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVWeapon.WeaponCapability">
+            <summary>
+            获取或设置武器不同阶段(不同攻击模式)下攻击能力
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVWeapon.#ctor">
+            <summary>
+            构造函数(默认)
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVWeapon.#ctor(System.Int32,System.String,System.Double,SceneElementDll.UAV.SEUAVWeaponCapability[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iWeaponIndex">武器编号</param>
+            <param name="sWeaponType">武器型号</param>
+            <param name="fWeaponCost">武器价值</param>
+            <param name="mWeaponCapability">武器不同阶段(不同攻击模式)下攻击能力</param>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVWeapon.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.UAV.SEUAVWeaponCapability">
+            <summary>
+            武器不同阶段(不同攻击模式)下攻击能力类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVWeaponCapability.hittingMode">
+            <summary>
+            武器攻击模式(或者攻击阶段)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVWeaponCapability.HittingMode">
+            <summary>
+            获取或设置武器攻击模式(或者攻击阶段)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVWeaponCapability.hittingRange">
+            <summary>
+            武器攻击范围(半径)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVWeaponCapability.HittingRange">
+            <summary>
+            获取或设置武器攻击范围(半径)
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVWeaponCapability.hittingAbility">
+            <summary>
+            武器攻击能力(概率: 取值0-1)
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVWeaponCapability.HittingAbility">
+            <summary>
+            获取或设置武器攻击能力(概率: 取值0-1))
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVWeaponCapability.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVWeaponCapability.#ctor(System.String,System.Double,System.Double)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="sHittingMode">武器攻击模式(或者攻击阶段) LIUWeiRemark需进一步确认有哪些攻击模式</param>
+            <param name="fHittingRange">武器攻击范围(半径)</param>
+            <param name="HhittingAbility">武器攻击能力(概率: 取值0-1)</param>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVWeaponCapability.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SceneElementDll.UAV.SEUAVImageSensor">
+            <summary>
+            图像探测传感器定义类
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVImageSensor.imageSensorIndex">
+            <summary>
+            图像探测传感器编号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVImageSensor.ImagetSensorIndex">
+            <summary>
+            获取或设置图像胁探测传感器编号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVImageSensor.imageSensorType">
+            <summary>
+            图像探测传感器型号
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVImageSensor.ImageSensorType">
+            <summary>
+            获取或设置图像探测传感器型号
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVImageSensor.imageSensorRange">
+            <summary>
+            图像探测传感器探测范围
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVImageSensor.ImageSensorRange">
+            <summary>
+            获取或设置图像探测传感器探测范围
+            </summary>
+        </member>
+        <member name="F:SceneElementDll.UAV.SEUAVImageSensor.imageResolvingPower">
+            <summary>
+            图像探测传感器分辨率
+            </summary>
+        </member>
+        <member name="P:SceneElementDll.UAV.SEUAVImageSensor.ImageResolvingPower">
+            <summary>
+            获取或设置图像探测传感器分辨率
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVImageSensor.#ctor">
+            <summary>
+            构造函数(空)
+            </summary>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVImageSensor.#ctor(System.Int32,System.String,System.Double,System.Double)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iImageSensorIndex">图像探测传感器编号</param>
+            <param name="sImageSensorType">图像探测传感器型号</param>
+            <param name="fImageSensorRange">图像探测传感器探测距离</param>
+            <param name="fImageResolvingPower">图像探测传感器分辨率</param>
+        </member>
+        <member name="M:SceneElementDll.UAV.SEUAVImageSensor.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

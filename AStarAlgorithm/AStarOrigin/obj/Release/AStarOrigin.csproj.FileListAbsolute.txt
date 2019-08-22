@@ -1,0 +1,8 @@
+F:\myengineer\CCSP4.13.2018-v1\CCSP_ControlCenter\ControlCenter\bin\Release\PathPlanning\Method\PlanningAlgorithmDll\AStarOrigin.XML
+F:\myengineer\CCSP4.13.2018-v1\CCSP_ControlCenter\ControlCenter\bin\Release\PathPlanning\Method\PlanningAlgorithmDll\AStarOrigin.dll
+F:\myengineer\CCSP4.13.2018-v1\CCSP_ControlCenter\ControlCenter\bin\Release\PathPlanning\Method\PlanningAlgorithmDll\AStarOrigin.pdb
+F:\myengineer\CCSP4.13.2018-v1\CCSP_ControlCenter\PlanningAlgorithms\AStarAlgorithm\AStarOrigin\obj\Release\AStarOrigin.csprojAssemblyReference.cache
+F:\myengineer\CCSP4.13.2018-v1\CCSP_ControlCenter\PlanningAlgorithms\AStarAlgorithm\AStarOrigin\obj\Release\AStarOrigin.csproj.CoreCompileInputs.cache
+F:\myengineer\CCSP4.13.2018-v1\CCSP_ControlCenter\PlanningAlgorithms\AStarAlgorithm\AStarOrigin\obj\Release\AStarOrigin.csproj.CopyComplete
+F:\myengineer\CCSP4.13.2018-v1\CCSP_ControlCenter\PlanningAlgorithms\AStarAlgorithm\AStarOrigin\obj\Release\AStarOrigin.dll
+F:\myengineer\CCSP4.13.2018-v1\CCSP_ControlCenter\PlanningAlgorithms\AStarAlgorithm\AStarOrigin\obj\Release\AStarOrigin.pdb

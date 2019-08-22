@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F639689C-8D60-4C23-9991-78705290182F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JumpPointSearch</RootNamespace>
+    <AssemblyName>JumpPointSearch</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\ControlCenter\bin\Release\PathPlanning\Method\PlanningAlgorithmDll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\ControlCenter\bin\Release\PathPlanning\Method\PlanningAlgorithmDll\JumpPointSearch.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConfigDll">
+      <HintPath>..\..\..\CCSP_BasicLibrary\ConfigDll.dll</HintPath>
+    </Reference>
+    <Reference Include="PlanningAlgorithmInterface">
+      <HintPath>..\..\ControlCenter\bin\Release\PlanningAlgorithmInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneElementDll">
+      <HintPath>..\..\..\CCSP_BasicLibrary\SceneElementDll\obj\Release\SceneElementDll.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BinaryHeap\BinaryHeap.cs" />
+    <Compile Include="BinaryHeap\MaxBinaryHeap.cs" />
+    <Compile Include="BinaryHeap\MinBinaryHeap.cs" />
+    <Compile Include="JPSAlgorithm.cs" />
+    <Compile Include="JPSInfo.cs" />
+    <Compile Include="JPSAlgorithmHelper.cs" />
+    <Compile Include="JPSParameter.cs" />
+    <Compile Include="JPSVisualization.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExperimentMethods\ExperimentMethodsInterface\ExperimentMethodsInterface.csproj">
+      <Project>{cd5a67e1-d927-475e-a791-f5c21851ea1a}</Project>
+      <Name>ExperimentMethodsInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExperimentMethods\PathPlaningDataVisualization\PathPlaningDataVisualization.csproj">
+      <Project>{1c2cd995-70a3-4def-8121-4510037bb89c}</Project>
+      <Name>PathPlaningDataVisualization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

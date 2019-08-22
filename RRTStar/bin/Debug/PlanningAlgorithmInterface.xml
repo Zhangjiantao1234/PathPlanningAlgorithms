@@ -1,0 +1,1042 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PlanningAlgorithmInterface</name>
+    </assembly>
+    <members>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.PlanningAlgoInfoBase.AlgorithmName">
+            <summary>
+            算法名称
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.PlanningAlgoInfoBase.VersionNum">
+            <summary>
+            版本号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.PlanningAlgoInfoBase.VersionDescription">
+            <summary>
+            算法（版本）说明
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.PlanningAlgoInfoBase.AlgorithmType">
+            <summary>
+            dll中planning算法Type
+            创建算法实例的原始信息
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.PlanningAlgoInfoBase.ParameterType">
+            <summary>
+            dll中planning算法参数type
+            创建算法参数实例的原始信息
+            </summary>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgoDllInfo">
+            <summary>
+            作为DLL算法信息定义的接口
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgoDllInfo.AlgoInfo">
+            <summary>
+            算法信息
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgoDllInfo.OnLoad">
+            <summary>
+            DLL加载入口
+            仅需完成AlgoInfo的数据刷新工作，由ControlCenter调用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgorithm">
+            <summary>
+            静态算法继承接口
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgorithm.AlgoInput">
+            <summary>
+            算法输入信息，ControlCenter 提供
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgorithm.AlgoParameter">
+            <summary>
+            算法参数信息，由ControlCenter在界面创建后提供
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgorithm.InitParameter">
+            <summary>
+            初始化算法参数
+            隐含参数AlgoParameter
+            在Planning函数初始时执行（controlCenter）
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgorithm.IsSafePoint">
+            <summary>
+            检查Point3 点是否安全
+            ControlCenter 提供
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgorithm.IsSafeLine">
+            <summary>
+            返回lhs,rhs构成的线段是否安全
+            ControlCenter 提供
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgorithm.IsSafePath">
+            <summary>
+            判断航路是否安全
+            第一个第二个参数为MPath的节点编号
+            第三个参数为MPath本身
+            ControlCenter 提供
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IPlanningAlgorithm.BuildPathForSingleUAVInStatic(System.Int32)">
+            <summary>
+            静态算法执行函数
+            </summary>
+            <param name="iTaskIndex">调用该算法的无人机编号</param>
+            <returns></returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.AlgorithmInterface.ICompletePlanningAlgorithm">
+            <summary>
+            一次规划得到完整航迹的RealTimePlanning算法接口
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.ICompletePlanningAlgorithm.BuildPathForSingleUAVForRealTime(System.Int32,PlanningAlgorithmInterface.Define.Output.MWaypoint,PlanningAlgorithmInterface.Define.Output.MPath)">
+            <summary>
+            动态算法执行函数
+            </summary>
+            <param name="iTaskIndex"></param>
+            <param name="mWaypoint"></param>
+            <param name="mPath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.AlgorithmInterface.IIntegratedPlanningAlgoritm">
+            <summary>
+            迭代计算得到局部航迹的RealTimePlanning算法接口
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IIntegratedPlanningAlgoritm.BuildPathForSingleUAVInCRealTime(System.Int32,System.Int32)">
+            <summary>
+            Planning算法
+            第一个参数为iTaskIndex
+            第二个参数为iStageIndex
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IIntegratedPlanningAlgoritm.MarkDetectedThreat">
+            <summary>
+            获取Pmethod中MarkDetectedThreat函数
+            ControlCenter提供
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IIntegratedPlanningAlgoritm.TrackingPathForSingleUAVInCRealTime">
+            <summary>
+            跟踪算法
+            第一个参数为iTaskIndex
+            第二个参数为iStageIndex
+            ControlCenter提供
+            </summary>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.AlgorithmInterface.IStaticConflictRelief">
+            <summary>
+            冲突解脱函数入口
+            为静态算法准备。
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IStaticConflictRelief.ConflictReliefProcess(System.Collections.Generic.List{PlanningAlgorithmInterface.Define.Output.MPath})">
+            <summary>
+            冲突解脱函数入口
+            </summary>
+            <param name="Paths">所有航迹结果</param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IStaticConflictRelief.RePlanningTrigger(System.Collections.Generic.List{PlanningAlgorithmInterface.Define.Output.MPath})">
+            <summary>
+            冲突解脱Trigger
+            </summary>
+            <param name="Paths">所有航迹结果</param>
+            <returns>True : 重规划</returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.AlgorithmInterface.IRealtimeIntegratedRelief">
+            <summary>
+            冲突解脱实时类
+            每次规划/重规划得到一条完整的航迹
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IRealtimeIntegratedRelief.RePlanningTrigger(System.Int32,SceneElementDll.UAV.SEUAVState[],PlanningAlgorithmInterface.Define.Output.MWaypoint[],System.Collections.Generic.List{PlanningAlgorithmInterface.Define.Output.MPath})">
+            <summary>
+            重规划Trigger,加载到Delegate后被PMethod里的ReplanningTrigger调用
+            Trigger 计算速度必须要快。这是元操作。
+            </summary>
+            <param name="iTaskIndex">ID</param>
+            <param name="mSEUAVState">当前所有无人机状态（位置方向）</param>
+            <param name="mWaypoint">当前所有无人机的期望的下一个坐标</param>
+            <param name="mlist">暂时规划出的无人机航迹</param>
+            <returns>True冲规划 </returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.AlgorithmInterface.IRealtimeCompleteRelief">
+            <summary>
+            冲突解脱实时类
+            每次规划得到一条非完整的航迹
+            所以一直处于重规划阶段。
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IRealtimeCompleteRelief.ConflictReliefProcess(System.Collections.Generic.List{PlanningAlgorithmInterface.Define.Output.MPath},SceneElementDll.UAV.SEUAVState[],System.Collections.Generic.List{System.Int32})">
+            <summary>
+            冲突解脱函数，输入为所有的航迹 + 所有的无人机状态
+            注意，这里给的结果是 Path ,不是 tragetory， 所以没有时间轴。 
+            </summary>
+            <param name="Paths"></param>
+            <param name="mSEUAVState"></param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IRealtimeCompleteRelief.RePlanningTrigger(System.Int32,SceneElementDll.UAV.SEUAVState[],PlanningAlgorithmInterface.Define.Output.MWaypoint[],System.Collections.Generic.List{PlanningAlgorithmInterface.Define.Output.MPath})">
+            <summary>
+            重规划Trigger,加载到Delegate后被PMethod里的ReplanningTrigger调用
+            Trigger 计算速度必须要快。这是元操作。
+            </summary>
+            <param name="iTaskIndex">ID</param>
+            <param name="mSEUAVState">当前所有无人机状态（位置方向）</param>
+            <param name="mWaypoint">当前所有无人机的期望的下一个坐标</param>
+            <param name="mlist">暂时规划出的无人机航迹</param>
+            <returns>True : 重规划</returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.AlgorithmInterface.IParameter">
+            <summary>
+            算法参数接口
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IParameter.Default">
+            <summary>
+            获取算法参数默认值
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.AlgorithmInterface.IParameter.User">
+            <summary>
+            获取算法参数用户值
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.AlgorithmInterface.IParameter.SetParameterFile">
+            <summary>
+            设置参数文件
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.DataGeneInterface.ResultConverterInfo.AlgorithmName">
+            <summary>
+            算法名称
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.DataGeneInterface.ResultConverterInfo.VersionNum">
+            <summary>
+            版本号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.DataGeneInterface.ResultConverterInfo.VersionDescription">
+            <summary>
+            算法（版本）说明
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.DataGeneInterface.IPathResultConverter.ConverterInfo">
+            <summary>
+            基本信息
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.DataGeneInterface.IPathResultConverter.PathResult">
+            <summary>
+            航迹结果
+            外部导入，内部使用
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.DataGeneInterface.IPathResultConverter.SaveAddress">
+            <summary>
+            文件输出保存路径
+            默认值为string.Empty();
+            如果保存到数据库则不使用该字段即可
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.DataGeneInterface.IPathResultConverter.SaveDBInfo">
+            <summary>
+            数据库输出保存字段
+            通过string 解析该得到的属性
+            默认值为string.Empty();
+            如果保存到文件则不使用该字段即可
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.DataGeneInterface.IPathResultConverter.ConvertExecution(System.String)">
+            <summary>
+            转化执行主函数
+            </summary>
+            <param name="MResultName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.Define.Input.MInput">
+            <summary>
+            无人机组航迹规划任务类
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MInput.m_Scenario">
+            <summary>
+            仿真任务
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MInput.Scenario">
+            <summary>
+            获取或设置仿真任务
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MInput.m_UAVTask">
+            <summary>
+            无人机航迹规划任务
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MInput.UAVTask">
+            <summary>
+            获取或设置无人机航迹规划任务
+            </summary>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.Define.Input.MKeyState">
+            <summary>
+            关键点类
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MKeyState.m_Index">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MKeyState.Index">
+            <summary>
+            获取或设置编号
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MKeyState.m_Location">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MKeyState.Location">
+            <summary>
+            获取或设置位置
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MKeyState.m_Direction">
+            <summary>
+            水平飞行方向
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MKeyState.Direction">
+            <summary>
+            获取或设置水平飞行方向
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MKeyState.m_Direction_Vertical">
+            <summary>
+            垂直飞行方向
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MKeyState.Direction_Vertical">
+            <summary>
+            获取或设置垂直飞行方向
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MKeyState.m_Velocity">
+            <summary>
+            水平飞行速率
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MKeyState.Velocity">
+            <summary>
+            获取或设置水平飞行速率
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MKeyState.m_Velocity_Vertical">
+            <summary>
+            垂直飞行速率
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MKeyState.Velocity_Vertical">
+            <summary>
+            获取或设置垂直飞行速率
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MKeyState.m_ArrivingTime">
+            <summary>
+            到达时间
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MKeyState.ArrivingTime">
+            <summary>
+            获取或设置到达时间
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Input.MKeyState.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Input.MKeyState.#ctor(SceneElementDll.UAV.SEUAVState)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.Define.Input.MStage">
+            <summary>
+            无人机航迹规划阶段类
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MStage.m_StageIndex">
+            <summary>
+            阶段编号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MStage.StageIndex">
+            <summary>
+            获取或设置阶段编号
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MStage.m_StartState">
+            <summary>
+            起始状态
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MStage.StartState">
+            <summary>
+            获取或设置起始状态
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MStage.m_TargetState">
+            <summary>
+            目标状态
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MStage.TargetState">
+            <summary>
+            获取或设置目标状态
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MStage.m_IsSEADStage">
+            <summary>
+            是否SEAD阶段 (0:否; 1:是地空导弹SEAD阶段; 2:是雷达SEAD阶段)
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MStage.IsSEADStage">
+            <summary>
+            获取或设置是否SEAD阶段 (0:否; 1:是地空导弹SEAD阶段; 2:是雷达SEAD阶段)
+            </summary>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing">
+            <summary>
+            威胁信息共享类(分布式模式下使用)
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.m_UAVIndex">
+            <summary>
+            无人机编号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.UAVIndex">
+            <summary>
+            获取或设置无人机编号
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.m_UAVCurrentPosition">
+            <summary>
+            无人机当前坐标
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.UAVCurrentPosition">
+            <summary>
+            获取或设置无人机当前坐标
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.m_UAVCurrentStageIndex">
+            <summary>
+            无人机当前阶段编号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.UAVCurrentStageIndex">
+            <summary>
+            获取或设置无人机当前阶段编号
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.m_Threats">
+            <summary>
+            当前无人机掌握的威胁信息
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.Threats">
+            <summary>
+            获取或设置当前无人机掌握的威胁信息
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.Initialize(System.Int32,SceneElementDll.PScenario)">
+            <summary>
+            初始化共享威胁信息
+            </summary>
+            <param name="mUAVIndex">无人机编号</param>
+            <param name="mScenario">仿真任务</param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.CombineSharedThreatInformation(System.Int32,SceneElementDll.PScenario,System.Collections.Generic.List{PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing}@)">
+            <summary>
+            合并两个无人机的探测信息
+            </summary>
+            <param name="iTaskIndex">本客户端无人机对应的任务编号</param>
+            <param name="mScenario">仿真任务</param>
+            <param name="mSharedThreatInformation">共享威胁信息</param>
+            <returns>是否从其他无人机获得新信息</returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Input.MThreatInformationSharing.Combine(SceneElementDll.Scene.Obstacle.SEThreats)">
+            <summary>
+            将另一个威胁信息合并到本机威胁信息
+            </summary>
+            <param name="mNewThreat">第一个无人机的威胁信息类</param>
+            <returns>是否更新了本机威胁</returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.Define.Input.MUAVTask">
+            <summary>
+            单个无人机航迹规划任务类
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MUAVTask.m_Index">
+            <summary>
+            无人机编号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MUAVTask.Index">
+            <summary>
+            获取或设置无人机编号
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MUAVTask.m_CurrentTeam">
+            <summary>
+            当前编队的信息
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MUAVTask.CurrentTeam">
+            <summary>
+            获取或者设置编队信息
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Input.MUAVTask.m_Stages">
+            <summary>
+            规划阶段编号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Input.MUAVTask.Stages">
+            <summary>
+            获取或设置规划阶段编号
+            </summary>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.Define.Output.MPath">
+            <summary>
+            航迹类
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MPath.m_Index">
+            <summary>
+            无人机编号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MPath.Index">
+            <summary>
+            获取或设置无人机编号
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MPath.m_Waypoints">
+            <summary>
+            航路点数组
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MPath.Waypoints">
+            <summary>
+            获取或设置航路点数组
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MPath.ToString">
+            <summary>
+            重载ToString()函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MPath.Add(PlanningAlgorithmInterface.Define.Output.MPath,PlanningAlgorithmInterface.Define.Output.MPath,System.Boolean)">
+            <summary>
+            合并两段航路
+            </summary>
+            <param name="mPath1">航路1</param>
+            <param name="mPath2">航路2</param>
+            <param name="isConnected">是否将航路2的第一个点舍弃(true: 舍弃)(当航路1最后一个点和航路2第一个点重合时使用)</param>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MPath.Add(PlanningAlgorithmInterface.Define.Output.MPath,System.Boolean)">
+            <summary>
+            将新的航路点添加到当前航路段
+            </summary>
+            <param name="mNewPath">新加入的航路</param>
+            <param name="isConnected">是否将新加入的航路的第一个点舍弃(true: 舍弃)(当前航路最后一个点和新航路第一个点重合时使用)</param>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MPath.IsNull">
+            <summary>
+            航路点集合为空
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MPath.IsEmpty">
+            <summary>
+            航路点集合为空, 或者航路点数量为零
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MPath.GetPathSegment">
+            <summary>
+            获取所有航路段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MPath.GetPathSegment(System.Int32,System.Int32)">
+            <summary>
+            获取指定航路点编号的航路段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.Define.Output.MResult">
+            <summary>
+            航迹规划结果类
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MResult.m_Scenario">
+            <summary>
+            仿真任务
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MResult.Scenario">
+            <summary>
+            获取或设置仿真任务
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MResult.m_UAVPath">
+            <summary>
+            无人机的航迹
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MResult.UAVPath">
+            <summary>
+            获取或设置无人机的航迹
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MResult.m_PlanningTime">
+            <summary>
+            航迹计算时间(仅静态方法有意义)
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MResult.PlanningTime">
+            <summary>
+            获取或设置航迹计算时间(仅静态方法有意义)
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MResult.IsNull">
+            <summary>
+            航路是否为空
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.Define.Output.MSegment">
+            <summary>
+            航路点类
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MSegment.m_StartWaypoint">
+            <summary>
+            起始航路点
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MSegment.StartWaypoint">
+            <summary>
+            获取或设置起始航路点
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MSegment.m_EndWaypoint">
+            <summary>
+            终止航路点
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MSegment.EndWaypoint">
+            <summary>
+            获取或设置终止航路点
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MSegment.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MSegment.#ctor(PlanningAlgorithmInterface.Define.Output.MWaypoint,PlanningAlgorithmInterface.Define.Output.MWaypoint)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mStartWaypoint">起始航路点</param>
+            <param name="mEndWaypoint">终止航路点</param>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.Define.Output.MWaypoint">
+            <summary>
+            航路点类
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MWaypoint.m_Index">
+            <summary>
+            航路点编号
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MWaypoint.Index">
+            <summary>
+            获取或设置航路点编号
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MWaypoint.m_State">
+            <summary>
+            航路点状态
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MWaypoint.State">
+            <summary>
+            获取或设置航路点状态
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MWaypoint.m_StageIndex">
+            <summary>
+            航路点所属阶段
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MWaypoint.StageIndex">
+            <summary>
+            获取或设置航路点所属阶段
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.Define.Output.MWaypoint.m_FlightTimeToNext">
+            <summary>
+            无人机从该航路点到下个航路点的飞行时间
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.Define.Output.MWaypoint.FlightTimeToNext">
+            <summary>
+            获取或设置无人机从该航路点到下个航路点的飞行时间
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MWaypoint.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MWaypoint.#ctor(System.Int32,SceneElementDll.UAV.SEUAVState)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iIndex">航路点编号</param>
+            <param name="mState">无人机状态</param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MWaypoint.#ctor(System.Int32,SceneElementDll.UAV.SEUAVState,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iIndex">航路点编号</param>
+            <param name="mState">无人机状态</param>
+            <param name="mStageIndex">航路点所属阶段</param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MWaypoint.#ctor(System.Int32,SceneElementDll.UAV.SEUAVState,System.Double,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iIndex">航路点编号</param>
+            <param name="mState">无人机状态</param>
+            <param name="mFlightTimeToNext">到下一点的飞行时间</param>
+            <param name="mStageIndex">航路点所属阶段</param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.Define.Output.MWaypoint.Clone">
+            <summary>
+            创建航路点副本
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.UAVTeamList">
+            <summary>
+            用来存放仿真任务中的所有Team
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.iUAVTeamListIndex">
+            <summary>
+            当前仿真任务中的TeamList的ID
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.UAVTeamListIndex">
+            <summary>
+            当前仿真任务中的TeamList的ID
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.UAVLeaderIndex">
+            <summary>
+            获取或设置组队中领队无人机无人机编号
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.IsUAVTeamListAvailable(SceneElementDll.UAV.SEUAVGroup)">
+            <summary>
+            检查UAVTeam参数有效性
+            </summary>
+            <param name="UAVLeaderGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.UAVLeaderTask">
+            <summary>
+            获取或设置无人机领队的航迹规划任务(未使用)
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.UAVTeamIndexList">
+            <summary>
+            Team所有成员
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.UAVSafeDistance">
+            <summary>
+            无人机成员间安全距离（中心距离，不考虑无人机尺寸）
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.IsFormationChangedAvailabe">
+            <summary>
+            队形变换标志位
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.FormationAvailabeDict">
+            <summary>
+            无人机组可选用的无人机队形 
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.CurrentFormation">
+            <summary>
+            无人机当前编队
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam.TeamFormationInfo">
+            <summary>
+            无人机编队信息接口
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.FormationType.ArrowFormation.GenerateTeamPos(System.Int32,System.Double)">
+            <summary>
+            生成TeamPos ,正东方向为正方向
+            </summary>
+            <param name="MemberNum"></param>
+            <param name="SafeDistance"></param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.FormationType.CircleFormation.GenerateTeamPos(System.Int32,System.Double)">
+            <summary>
+            生成TeamPos
+            </summary>
+            <param name="MemberNum"></param>
+            <param name="SafeDistance"></param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.FormationType.HerringboneFormaion.GenerateTeamPos(System.Int32,System.Double)">
+            <summary>
+            生成TeamPos
+            </summary>
+            <param name="MemberNum"></param>
+            <param name="SafeDistance"></param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.FormationType.LineFormation.GenerateTeamPos(System.Int32,System.Double)">
+            <summary>
+            生成TeamPos
+            </summary>
+            <param name="MemberNum"></param>
+            <param name="SafeDistance"></param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.FormationType.RhombusFormation.GenerateTeamPos(System.Int32,System.Double)">
+            <summary>
+            生成TeamPos
+            </summary>
+            <param name="MemberNum"></param>
+            <param name="SafeDistance"></param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.FormationType.RhombusFormation.SizeCheck(System.Int32)">
+            <summary>
+            检查菱形尺寸的
+            </summary>
+            <param name="MumberNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.FormationType.TShapeFormation.GenerateTeamPos(System.Int32,System.Double)">
+            <summary>
+            生成TeamPos
+            </summary>
+            <param name="MemberNum"></param>
+            <param name="SafeDistance"></param>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.ITeamFormation.Scenario">
+            <summary>
+            读取外部的场景信息
+            为IsSafePoint函数提供数据
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.ITeamFormation.FormType">
+            <summary>
+            无人机队形,只输入，无法输出，内部用
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.ITeamFormation.FormStatus">
+            <summary>
+            无人机编队状态
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.ITeamFormation.ChangingFormation(PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.TeamFormationEnum)">
+            <summary>
+            改变编队到目标类型
+            </summary>
+            <param name="TargetForamtion"></param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.ITeamFormation.IsSafePoint4Team(SceneElementDll.Basic.FPoint3,System.Double)">
+            <summary>
+            此处应该定义SafePoint函数，外界提供场景信息。而且这个函数的输出值应该丢在IMethod里
+            给出中心点坐标，根据各无人机位置及场景信息确定编队是否是安全的
+            </summary>
+            <param name="mPoint">中心点坐标</param>
+            <param name="direction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.ITeamFormation.GetAutoFormation(SceneElementDll.Basic.FPoint3,PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam@)">
+            <summary>
+            当前无人机位置 获取 当前最合适的队形,参数可参考
+            </summary>
+            <param name="mPoint">编队中心参考点</param>
+            <param name="mTeamInfo">编队信息</param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.ITeamFormation.GetMemberPosWithDirection(System.Double)">
+            <summary>
+            获取带有方向的各个member的pos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation">
+            <summary>
+            场景编队信息
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.mScenario">
+            <summary>
+            场景信息
+            为IsSafePoint提供数据
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.mIsSafePointDele">
+            <summary>
+            加载并调用Old版本的SafePoint函数
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.Scenario">
+            <summary>
+            读取外部的场景信息
+            为IsSafePoint函数提供数据
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.IsSafePointDele">
+            <summary>
+            加载并调用Old版本的SafePoint函数
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.mFormType">
+            <summary>
+            无人机队形初始化
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.FormType">
+            <summary>
+            无人机队形，外界输入参数
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.mFormStatus">
+            <summary>
+            无人机编队状态
+            </summary>
+        </member>
+        <member name="P:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.FormStatus">
+            <summary>
+            无人机编队状态
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.mMemberPos">
+            <summary>
+            编队成员相对原点的坐标
+            </summary>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.ChangingFormation(PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.TeamFormationEnum)">
+            <summary>
+            改变编队到目标类型(刘彦杰)
+            </summary>
+            <param name="TargetForamtion"></param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.IsSafePoint4Team(SceneElementDll.Basic.FPoint3,System.Double)">
+            <summary>
+            此处应该定义SafePoint函数，外界提供场景信息。而且这个函数的输出值应该丢在IMethod里
+            给出中心点坐标，根据各无人机位置及场景信息确定编队是否是安全的
+            </summary>
+            <param name="mPoint">中心点坐标</param>
+            <param name="degree">编队方位角</param>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.GetAutoFormation(SceneElementDll.Basic.FPoint3,PlanningAlgorithmInterface.UAVTeamDefine.MUAVTeam@)">
+            <summary>
+            自动化切换编队队形(刘彦杰)
+            </summary>
+            <param name="mPoint"></param>
+            <param name="mTeamInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.GenerateTeamPos(System.Int32,System.Double)">
+            <summary>
+            以（0,0,0）为中心以yz平面作为对称面 计算编队成员相对原点的坐标
+            虚拟长机坐标(0,0,0)，其他飞机与该虚拟长机的相对位置为其坐标。
+            虚拟长机初始时正方向为X轴正向。
+            数据刷新到MemberPos
+            </summary>
+            <param name="MemberNum">飞机数量</param>
+            <param name="SafeDistance">飞机间的安全距离</param>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.FPoint3Vector2DRotation(SceneElementDll.Basic.FPoint3,System.Double)">
+            <summary>
+            向量旋转
+            </summary>
+            <param name="vec"></param>
+            <param name="degree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.PTeamFormation.GetMemberPosWithDirection(System.Double)">
+            <summary>
+            获取带有方向的各个member的pos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.TeamFormationStatusEnum.NONE">
+            <summary>
+            异常状态
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.TeamFormationStatusEnum.WAITING">
+            <summary>
+            切换队形就绪，等待相应
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.TeamFormationStatusEnum.CHANGING">
+            <summary>
+            开始切换队形
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.TeamFormationStatusEnum.CHANGING_COMPLETE">
+            <summary>
+            切换完成
+            </summary>
+        </member>
+        <member name="F:PlanningAlgorithmInterface.UAVTeamDefine.TeamFormation.TeamFormationStatusEnum.MAINTAIN_FORMATION">
+            <summary>
+            维持当前队形
+            </summary>
+        </member>
+    </members>
+</doc>

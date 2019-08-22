@@ -1,0 +1,681 @@
+﻿  PathPlanning.cpp
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\fpoint.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMissionTarget::target_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMissionTarget”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\enum.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMission::v_target_ptr”: class“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(33): warning C4251: “CCSP_BasicLibrary::SEMission::s_describe”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\sescene.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\secoordinate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\seenvironment.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp(24): warning C4251: “CCSP_BasicLibrary::IThreats::inherit_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::IThreats”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): warning C4251: “CCSP_BasicLibrary::SEThraets::v_threats_ptr”: class“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEThraets”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp(23): warning C4251: “CCSP_BasicLibrary::SEUAVImageSensor::image_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVImageSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp(27): warning C4251: “CCSP_BasicLibrary::SEUAVWeaponCapability::s_hitting_mode”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeaponCapability”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::s_weaponType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(31): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::v_weapon_capability”: class“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(22): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavstate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp(26): warning C4251: “CCSP_BasicLibrary::SEUAVThreatSensor::threat_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVThreatSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAV::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(30): warning C4251: “CCSP_BasicLibrary::SEUAV::uavType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): warning C4251: “CCSP_BasicLibrary::SEUAV::v_weapon”: class“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): warning C4251: “CCSP_BasicLibrary::SEUAV::v_threat_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): warning C4251: “CCSP_BasicLibrary::SEUAV::v_image_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::v_UAVs”: class“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): note: 参见“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::s_description”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp(31): warning C4251: “CCSP_BasicLibrary::PScenario::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::PScenario”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  MInput.cpp
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\fpoint.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMissionTarget::target_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMissionTarget”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\enum.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMission::v_target_ptr”: class“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(33): warning C4251: “CCSP_BasicLibrary::SEMission::s_describe”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\sescene.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\secoordinate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\seenvironment.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp(24): warning C4251: “CCSP_BasicLibrary::IThreats::inherit_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::IThreats”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): warning C4251: “CCSP_BasicLibrary::SEThraets::v_threats_ptr”: class“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEThraets”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp(23): warning C4251: “CCSP_BasicLibrary::SEUAVImageSensor::image_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVImageSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp(27): warning C4251: “CCSP_BasicLibrary::SEUAVWeaponCapability::s_hitting_mode”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeaponCapability”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::s_weaponType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(31): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::v_weapon_capability”: class“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(22): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavstate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp(26): warning C4251: “CCSP_BasicLibrary::SEUAVThreatSensor::threat_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVThreatSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAV::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(30): warning C4251: “CCSP_BasicLibrary::SEUAV::uavType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): warning C4251: “CCSP_BasicLibrary::SEUAV::v_weapon”: class“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): warning C4251: “CCSP_BasicLibrary::SEUAV::v_threat_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): warning C4251: “CCSP_BasicLibrary::SEUAV::v_image_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::v_UAVs”: class“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): note: 参见“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::s_description”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp(31): warning C4251: “CCSP_BasicLibrary::PScenario::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::PScenario”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  PlanningHelper.cpp
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\fpoint.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMissionTarget::target_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMissionTarget”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\enum.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMission::v_target_ptr”: class“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(33): warning C4251: “CCSP_BasicLibrary::SEMission::s_describe”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\sescene.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\secoordinate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\seenvironment.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp(24): warning C4251: “CCSP_BasicLibrary::IThreats::inherit_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::IThreats”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): warning C4251: “CCSP_BasicLibrary::SEThraets::v_threats_ptr”: class“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEThraets”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp(23): warning C4251: “CCSP_BasicLibrary::SEUAVImageSensor::image_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVImageSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp(27): warning C4251: “CCSP_BasicLibrary::SEUAVWeaponCapability::s_hitting_mode”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeaponCapability”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::s_weaponType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(31): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::v_weapon_capability”: class“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(22): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavstate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp(26): warning C4251: “CCSP_BasicLibrary::SEUAVThreatSensor::threat_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVThreatSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAV::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(30): warning C4251: “CCSP_BasicLibrary::SEUAV::uavType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): warning C4251: “CCSP_BasicLibrary::SEUAV::v_weapon”: class“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): warning C4251: “CCSP_BasicLibrary::SEUAV::v_threat_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): warning C4251: “CCSP_BasicLibrary::SEUAV::v_image_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::v_UAVs”: class“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): note: 参见“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::s_description”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp(31): warning C4251: “CCSP_BasicLibrary::PScenario::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::PScenario”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  RRTAlgorithm.cpp
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\fpoint.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMissionTarget::target_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMissionTarget”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\enum.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMission::v_target_ptr”: class“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(33): warning C4251: “CCSP_BasicLibrary::SEMission::s_describe”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\sescene.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\secoordinate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\seenvironment.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp(24): warning C4251: “CCSP_BasicLibrary::IThreats::inherit_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::IThreats”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): warning C4251: “CCSP_BasicLibrary::SEThraets::v_threats_ptr”: class“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEThraets”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp(23): warning C4251: “CCSP_BasicLibrary::SEUAVImageSensor::image_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVImageSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp(27): warning C4251: “CCSP_BasicLibrary::SEUAVWeaponCapability::s_hitting_mode”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeaponCapability”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::s_weaponType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(31): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::v_weapon_capability”: class“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(22): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavstate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp(26): warning C4251: “CCSP_BasicLibrary::SEUAVThreatSensor::threat_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVThreatSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAV::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(30): warning C4251: “CCSP_BasicLibrary::SEUAV::uavType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): warning C4251: “CCSP_BasicLibrary::SEUAV::v_weapon”: class“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): warning C4251: “CCSP_BasicLibrary::SEUAV::v_threat_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): warning C4251: “CCSP_BasicLibrary::SEUAV::v_image_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::v_UAVs”: class“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): note: 参见“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::s_description”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp(31): warning C4251: “CCSP_BasicLibrary::PScenario::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::PScenario”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\planning-algorithm-rrt\pathplanning\rrt\src\rrtalgorithm.cpp(313): warning C4244: “参数”: 从“double”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=unsigned int
+          ]
+  RRTNode.cpp
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\fpoint.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  RRTParameter.cpp
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\fpoint.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMissionTarget::target_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMissionTarget”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\enum.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMission::v_target_ptr”: class“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(33): warning C4251: “CCSP_BasicLibrary::SEMission::s_describe”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\sescene.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\secoordinate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\seenvironment.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp(24): warning C4251: “CCSP_BasicLibrary::IThreats::inherit_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::IThreats”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): warning C4251: “CCSP_BasicLibrary::SEThraets::v_threats_ptr”: class“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEThraets”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp(23): warning C4251: “CCSP_BasicLibrary::SEUAVImageSensor::image_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVImageSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp(27): warning C4251: “CCSP_BasicLibrary::SEUAVWeaponCapability::s_hitting_mode”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeaponCapability”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::s_weaponType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(31): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::v_weapon_capability”: class“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(22): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavstate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp(26): warning C4251: “CCSP_BasicLibrary::SEUAVThreatSensor::threat_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVThreatSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAV::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(30): warning C4251: “CCSP_BasicLibrary::SEUAV::uavType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): warning C4251: “CCSP_BasicLibrary::SEUAV::v_weapon”: class“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): warning C4251: “CCSP_BasicLibrary::SEUAV::v_threat_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): warning C4251: “CCSP_BasicLibrary::SEUAV::v_image_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::v_UAVs”: class“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): note: 参见“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::s_description”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp(31): warning C4251: “CCSP_BasicLibrary::PScenario::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::PScenario”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  TimeControl.cpp
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\fpoint.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissiontarget.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMissionTarget::target_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMissionTarget”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\basic\include\enum.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): warning C4251: “CCSP_BasicLibrary::SEMission::v_target_ptr”: class“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::MissionTargetPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::MissionTargetPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semission.hpp(33): warning C4251: “CCSP_BasicLibrary::SEMission::s_describe”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMission”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\sescene.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\secoordinate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\seenvironment.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\ithreats.hpp(24): warning C4251: “CCSP_BasicLibrary::IThreats::inherit_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::IThreats”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): warning C4251: “CCSP_BasicLibrary::SEThraets::v_threats_ptr”: class“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEThraets”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\scene\obstacle\include\sethreats.hpp(32): note: 参见“std::vector<CCSP_BasicLibrary::SEThraets::IThreadsPtr,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEThraets::IThreadsPtr
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavimagesensor.hpp(23): warning C4251: “CCSP_BasicLibrary::SEUAVImageSensor::image_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVImageSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweaponcapability.hpp(27): warning C4251: “CCSP_BasicLibrary::SEUAVWeaponCapability::s_hitting_mode”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeaponCapability”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::s_weaponType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(31): warning C4251: “CCSP_BasicLibrary::SEUAVWeapon::v_weapon_capability”: class“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVWeapon”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavweapon.hpp(22): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeaponCapability,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeaponCapability
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavstate.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavthreatsensor.hpp(26): warning C4251: “CCSP_BasicLibrary::SEUAVThreatSensor::threat_sensor_type”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVThreatSensor”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAV::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(30): warning C4251: “CCSP_BasicLibrary::SEUAV::uavType”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): warning C4251: “CCSP_BasicLibrary::SEUAV::v_weapon”: class“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(50): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVWeapon,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVWeapon
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): warning C4251: “CCSP_BasicLibrary::SEUAV::v_threat_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(51): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVThreatSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVThreatSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): warning C4251: “CCSP_BasicLibrary::SEUAV::v_image_sensor”: class“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAV”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuav.hpp(52): note: 参见“std::vector<CCSP_BasicLibrary::SEUAVImageSensor,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAVImageSensor
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::v_UAVs”: class“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+  c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(28): note: 参见“std::vector<CCSP_BasicLibrary::SEUAV,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::SEUAV
+          ]
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\uav\include\seuavgroup.hpp(29): warning C4251: “CCSP_BasicLibrary::SEUAVGroup::s_description”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEUAVGroup”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\pscenario.hpp(31): warning C4251: “CCSP_BasicLibrary::PScenario::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CCSP_BasicLibrary::PScenario”的客户端使用
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissionregiontarget.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\jiantao zhang\desktop\basiclibrary\basiclibrary\basiclibrarycode\mission\include\semissionregiontarget.hpp(24): warning C4251: “CCSP_BasicLibrary::SEMissionRegionTarget::v_vertexs”: class“std::vector<CCSP_BasicLibrary::FPoint3,std::allocator<_Ty>>”需要有 dll 接口由 class“CCSP_BasicLibrary::SEMissionRegionTarget”的客户端使用
+          with
+          [
+              _Ty=CCSP_BasicLibrary::FPoint3
+          ]
+  c:\users\jiantao zhang\desktop\planning-algorithm-rrt\pathplanning\timecontrol\timecontrol.h(53): note: 参见“std::vector<CCSP_BasicLibrary::FPoint3,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=CCSP_BasicLibrary::FPoint3
+          ]
+c:\users\jiantao zhang\desktop\planning-algorithm-rrt\pathplanning\timecontrol\timecontrol.cpp(193): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+  PathPlanning.vcxproj -> C:\Users\Jiantao Zhang\Desktop\taskassignment\x64\Debug\PathPlanning.exe
